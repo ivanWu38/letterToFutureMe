@@ -32,8 +32,9 @@ struct LetterDetailView: View {
                     } label: { Image(systemName: "ellipsis.circle") }
                 }
             }
-            .onAppear {
-                markAsRead()
+            .onDisappear {
+                // 在用戶關閉信件時標記為已讀，提供更自然的用戶體驗
+                markAsReadSilently()
             }
         }
     }
@@ -44,6 +45,19 @@ struct LetterDetailView: View {
             print("🐛 Marking letter '\(letter.title)' as read")
             letter.isRead = true
             try? context.save()
+        }
+    }
+
+    private func markAsReadSilently() {
+        if !letter.isRead {
+            print("🐛 Silently marking letter '\(letter.title)' as read")
+            // 在一個新的任務中異步更新，避免影響當前 UI
+            Task {
+                await MainActor.run {
+                    letter.isRead = true
+                    try? context.save()
+                }
+            }
         }
     }
     
