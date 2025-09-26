@@ -4,6 +4,7 @@ import SwiftUI
 struct LetterDetailView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var context
+    @ObservedObject private var languageManager = LanguageManager.shared
     
     
     @State var letter: Letter
@@ -13,7 +14,7 @@ struct LetterDetailView: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
-                    Text(letter.title.isEmpty ? "Letter" : letter.title).font(.nordicHeading())
+                    Text(letter.title.isEmpty ? NSLocalizedString("letter.untitled", comment: "") : letter.title).font(.nordicHeading())
                     Text(letter.body).font(.body).fixedSize(horizontal: false, vertical: true)
                     if let data = letter.image1, let img = UIImage(data: data) { Image(uiImage: img).resizable().scaledToFit().clipShape(RoundedRectangle(cornerRadius: 12)) }
                     if let data = letter.image2, let img = UIImage(data: data) { Image(uiImage: img).resizable().scaledToFit().clipShape(RoundedRectangle(cornerRadius: 12)) }
@@ -21,13 +22,13 @@ struct LetterDetailView: View {
                 }
                 .padding()
             }
-            .navigationTitle("Letter")
+            .navigationTitle(NSLocalizedString("letter.title", comment: ""))
             .toolbar {
-                ToolbarItem(placement: .topBarLeading) { Button("Close") { dismiss() } }
+                ToolbarItem(placement: .topBarLeading) { Button(NSLocalizedString("letter.button.close", comment: "")) { dismiss() } }
                 ToolbarItem(placement: .topBarTrailing) {
                     Menu {
-                        Button(role: .destructive) { deleteLetter() } label: { Label("Delete", systemImage: "trash") }
-                        Button("Reschedule") { reschedule() }
+                        Button(role: .destructive) { deleteLetter() } label: { Label(NSLocalizedString("letter.button.delete", comment: ""), systemImage: "trash") }
+                        Button(NSLocalizedString("letter.button.reschedule", comment: "")) { reschedule() }
                     } label: { Image(systemName: "ellipsis.circle") }
                 }
             }

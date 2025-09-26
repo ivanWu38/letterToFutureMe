@@ -2,6 +2,7 @@ import SwiftUI
 
 
 struct HomeView: View {
+    @ObservedObject private var languageManager = LanguageManager.shared
     var onSendTapped: () -> Void
     @State private var showCompose = false
     
@@ -27,11 +28,11 @@ struct HomeView: View {
                                 }
                                 .clipShape(RoundedRectangle(cornerRadius: 28))
                             }
-                        Text("Letter to future me").font(.nordicTitle())
+                        Text(NSLocalizedString("home.title", comment: "")).font(.nordicTitle())
                     }
                     
                     
-                    NordicButton(title: "Send a Letter") { showCompose = true }
+                    NordicButton(title: NSLocalizedString("home.send_letter", comment: "")) { showCompose = true }
                         .padding(.horizontal)
                 }
                 .padding()

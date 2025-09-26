@@ -1,0 +1,63 @@
+/* Tab Bar */
+"tab.inbox" = "Inbox";
+"tab.home" = "Home";
+"tab.settings" = "Settings";
+
+/* Home Screen */
+"home.title" = "Letter to future me";
+"home.send_letter" = "Send a Letter";
+
+/* Inbox */
+"inbox.title" = "Inbox";
+"inbox.empty.title" = "No Letters Yet";
+"inbox.empty.description" = "Your future letters will appear here when their delivery time arrives.";
+"inbox.no_title" = "(No Title)";
+
+/* Compose Letter */
+"compose.title" = "Write a Letter";
+"compose.section.title" = "Title";
+"compose.section.message" = "Message";
+"compose.section.delivery_time" = "Delivery time";
+"compose.section.photos" = "Photos (optional)";
+"compose.title_placeholder" = "Optional title";
+"compose.deliver_at" = "Deliver at";
+"compose.photo1" = "Photo 1";
+"compose.photo2" = "Photo 2";
+"compose.button.cancel" = "Cancel";
+"compose.button.schedule" = "Schedule";
+"compose.error.invalid_date" = "Invalid date selected.";
+"compose.alert.error" = "Error";
+"compose.button.ok" = "OK";
+
+/* Letter Detail */
+"letter.title" = "Letter";
+"letter.untitled" = "Letter";
+"letter.button.close" = "Close";
+"letter.button.delete" = "Delete";
+"letter.button.reschedule" = "Reschedule";
+
+/* Photo Picker */
+"photo.choose" = "Choose Photo";
+"photo.remove" = "Remove";
+
+/* Settings */
+"settings.title" = "Settings";
+"settings.section.basic" = "Basic";
+"settings.section.language" = "Language";
+"settings.section.about" = "About this app";
+"settings.app_lock" = "Password Lock (Face ID)";
+"settings.language" = "Language";
+"settings.version" = "Version";
+
+/* Notifications */
+"notification.title" = "Letter to Future You";
+"notification.body_default" = "Your future letter has arrived.";
+
+/* App Lock */
+"applock.reason" = "Unlock to view your letters";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

@@ -5,6 +5,7 @@ import SwiftData
 struct RootView: View {
     @Environment(\.modelContext) private var context
     @Query(sort: [SortDescriptor(\Letter.deliverAt, order: .forward)]) private var letters: [Letter]
+    @ObservedObject private var languageManager = LanguageManager.shared
     @State private var tab: Int = 1 // 0: Inbox, 1: Home, 2: Settings
     @State private var showLock = UserDefaults.standard.bool(forKey: "appLockEnabled")
     @State private var currentTime = Date()
@@ -28,24 +29,24 @@ struct RootView: View {
             Group {
                 if unreadCount > 0 {
                     InboxView()
-                        .tabItem { Label("Inbox", systemImage: "envelope") }
+                        .tabItem { Label(NSLocalizedString("tab.inbox", comment: ""), systemImage: "envelope") }
                         .badge(unreadCount)
                         .tag(0)
                 } else {
                     InboxView()
-                        .tabItem { Label("Inbox", systemImage: "envelope") }
+                        .tabItem { Label(NSLocalizedString("tab.inbox", comment: ""), systemImage: "envelope") }
                         .tag(0)
                 }
             }
-            
-            
+
+
             HomeView(onSendTapped: { tab = 1; NotificationCenter.default.post(name: .init("openCompose"), object: nil) })
-                .tabItem { Label("Home", systemImage: "house") }
+                .tabItem { Label(NSLocalizedString("tab.home", comment: ""), systemImage: "house") }
                 .tag(1)
-            
-            
+
+
             SettingsView()
-                .tabItem { Label("Settings", systemImage: "gearshape") }
+                .tabItem { Label(NSLocalizedString("tab.settings", comment: ""), systemImage: "gearshape") }
                 .tag(2)
         }
         .tint(NordicTheme.slate)

@@ -37,10 +37,10 @@ struct PhotoPickerView: View {
                     RoundedRectangle(cornerRadius: 12).fill(.quaternary).frame(width: 84, height: 84).overlay(Image(systemName: "photo").imageScale(.large))
                 }
                 PhotosPicker(selection: $item, matching: .images, photoLibrary: .shared()) {
-                    Label("Choose Photo", systemImage: "photo.on.rectangle")
+                    Label(NSLocalizedString("photo.choose", comment: ""), systemImage: "photo.on.rectangle")
                 }
                 if data != nil {
-                    Button(role: .destructive) { data = nil } label: { Label("Remove", systemImage: "trash") }
+                    Button(role: .destructive) { data = nil } label: { Label(NSLocalizedString("photo.remove", comment: ""), systemImage: "trash") }
                 }
             }
         }

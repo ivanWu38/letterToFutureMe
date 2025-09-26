@@ -18,8 +18,8 @@ final class NotificationManager: ObservableObject {
     
     func schedule(for letter: Letter) async throws {
         let content = UNMutableNotificationContent()
-        content.title = "Letter to Future You"
-        content.body = letter.title.isEmpty ? "Your future letter has arrived." : letter.title
+        content.title = NSLocalizedString("notification.title", comment: "")
+        content.body = letter.title.isEmpty ? NSLocalizedString("notification.body_default", comment: "") : letter.title
         content.sound = .default
         content.userInfo = ["letterID": letter.id]
         

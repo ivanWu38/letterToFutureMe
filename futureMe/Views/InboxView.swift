@@ -5,6 +5,7 @@ import SwiftData
 struct InboxView: View {
     @Environment(\.modelContext) private var context
     @Query(sort: [SortDescriptor(\Letter.deliverAt, order: .reverse)]) private var letters: [Letter]
+    @ObservedObject private var languageManager = LanguageManager.shared
     @State private var selection: Letter?
     @State private var currentTime = Date()
 
@@ -19,14 +20,14 @@ struct InboxView: View {
                     ForEach(deliveredLetters) { letter in row(letter) }
                 } else {
                     ContentUnavailableView(
-                        "No Letters Yet",
+                        NSLocalizedString("inbox.empty.title", comment: ""),
                         systemImage: "envelope",
-                        description: Text("Your future letters will appear here when their delivery time arrives.")
+                        description: Text(NSLocalizedString("inbox.empty.description", comment: ""))
                     )
                 }
 
             }
-            .navigationTitle("Inbox")
+            .navigationTitle(NSLocalizedString("inbox.title", comment: ""))
             .onAppear {
                 currentTime = Date()
             }
@@ -52,7 +53,7 @@ struct InboxView: View {
         Button { selection = letter } label: {
             HStack {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(letter.title.isEmpty ? "(No Title)" : letter.title).font(.headline)
+                    Text(letter.title.isEmpty ? NSLocalizedString("inbox.no_title", comment: "") : letter.title).font(.headline)
                     Text(letter.deliverAt, style: .date)
                         .font(.caption).foregroundStyle(.secondary)
                 }

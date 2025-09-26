@@ -24,7 +24,7 @@ final class AppLock: ObservableObject {
         let ctx = LAContext()
         var error: NSError?
         if ctx.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            let reason = "Unlock to view your letters"
+            let reason = NSLocalizedString("applock.reason", comment: "")
             do { _ = try await ctx.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason); shouldLock = false } catch { }
         }
     }

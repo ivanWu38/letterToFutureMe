@@ -1,0 +1,63 @@
+/* Tab Bar */
+"tab.inbox" = "收件匣";
+"tab.home" = "首頁";
+"tab.settings" = "設定";
+
+/* Home Screen */
+"home.title" = "寫信給未來的自己";
+"home.send_letter" = "寄信";
+
+/* Inbox */
+"inbox.title" = "收件匣";
+"inbox.empty.title" = "還沒有信件";
+"inbox.empty.description" = "您的未來信件會在指定時間到達後顯示在這裡。";
+"inbox.no_title" = "（無標題）";
+
+/* Compose Letter */
+"compose.title" = "寫信";
+"compose.section.title" = "標題";
+"compose.section.message" = "訊息內容";
+"compose.section.delivery_time" = "寄送時間";
+"compose.section.photos" = "照片（選填）";
+"compose.title_placeholder" = "選填標題";
+"compose.deliver_at" = "寄送時間";
+"compose.photo1" = "照片 1";
+"compose.photo2" = "照片 2";
+"compose.button.cancel" = "取消";
+"compose.button.schedule" = "排程";
+"compose.error.invalid_date" = "選擇的日期無效。";
+"compose.alert.error" = "錯誤";
+"compose.button.ok" = "確定";
+
+/* Letter Detail */
+"letter.title" = "信件";
+"letter.untitled" = "信件";
+"letter.button.close" = "關閉";
+"letter.button.delete" = "刪除";
+"letter.button.reschedule" = "重新排程";
+
+/* Photo Picker */
+"photo.choose" = "選擇照片";
+"photo.remove" = "移除";
+
+/* Settings */
+"settings.title" = "設定";
+"settings.section.basic" = "基本設定";
+"settings.section.language" = "語言";
+"settings.section.about" = "關於此應用程式";
+"settings.app_lock" = "密碼鎖定 (Face ID)";
+"settings.language" = "語言";
+"settings.version" = "版本";
+
+/* Notifications */
+"notification.title" = "來自未來的信";
+"notification.body_default" = "您的未來信件已送達。";
+
+/* App Lock */
+"applock.reason" = "解鎖以查看您的信件";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

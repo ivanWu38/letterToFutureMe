@@ -1,0 +1,63 @@
+/* Tab Bar */
+"tab.inbox" = "受信箱";
+"tab.home" = "ホーム";
+"tab.settings" = "設定";
+
+/* Home Screen */
+"home.title" = "未来の自分への手紙";
+"home.send_letter" = "手紙を送る";
+
+/* Inbox */
+"inbox.title" = "受信箱";
+"inbox.empty.title" = "手紙はまだありません";
+"inbox.empty.description" = "配達時間になると、あなたの未来の手紙がここに表示されます。";
+"inbox.no_title" = "（タイトルなし）";
+
+/* Compose Letter */
+"compose.title" = "手紙を書く";
+"compose.section.title" = "タイトル";
+"compose.section.message" = "メッセージ";
+"compose.section.delivery_time" = "配達時間";
+"compose.section.photos" = "写真（任意）";
+"compose.title_placeholder" = "任意のタイトル";
+"compose.deliver_at" = "配達時間";
+"compose.photo1" = "写真 1";
+"compose.photo2" = "写真 2";
+"compose.button.cancel" = "キャンセル";
+"compose.button.schedule" = "スケジュール";
+"compose.error.invalid_date" = "無効な日付が選択されています。";
+"compose.alert.error" = "エラー";
+"compose.button.ok" = "OK";
+
+/* Letter Detail */
+"letter.title" = "手紙";
+"letter.untitled" = "手紙";
+"letter.button.close" = "閉じる";
+"letter.button.delete" = "削除";
+"letter.button.reschedule" = "再スケジュール";
+
+/* Photo Picker */
+"photo.choose" = "写真を選択";
+"photo.remove" = "削除";
+
+/* Settings */
+"settings.title" = "設定";
+"settings.section.basic" = "基本設定";
+"settings.section.language" = "言語";
+"settings.section.about" = "このアプリについて";
+"settings.app_lock" = "パスワードロック (Face ID)";
+"settings.language" = "言語";
+"settings.version" = "バージョン";
+
+/* Notifications */
+"notification.title" = "未来からの手紙";
+"notification.body_default" = "あなたの未来の手紙が届きました。";
+
+/* App Lock */
+"applock.reason" = "手紙を表示するにはロックを解除してください";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";
