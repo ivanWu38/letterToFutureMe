@@ -15,6 +15,7 @@ struct ComposeView: View {
     @State private var img2: Data? = nil
     @State private var isSaving = false
     @State private var error: String?
+    @State private var showingConfirmation = false
     
     
     var body: some View {
@@ -120,6 +121,12 @@ struct ComposeView: View {
             }
             .navigationBarHidden(true)
             .alert(NSLocalizedString("compose.alert.error", comment: ""), isPresented: .constant(error != nil), actions: { Button(NSLocalizedString("compose.button.ok", comment: "")) { error = nil } }, message: { Text(error ?? "") })
+            .fullScreenCover(isPresented: $showingConfirmation) {
+                LetterSentConfirmationView {
+                    showingConfirmation = false
+                    dismiss()
+                }
+            }
         }
     }
     
@@ -137,7 +144,7 @@ struct ComposeView: View {
             try await NotificationManager.shared.schedule(for: letter)
             print("🐛 Notification scheduled successfully")
             isSaving = false
-            dismiss()
+            showingConfirmation = true
         } catch {
             print("🐛 Error saving: \(error.localizedDescription)")
             self.error = error.localizedDescription

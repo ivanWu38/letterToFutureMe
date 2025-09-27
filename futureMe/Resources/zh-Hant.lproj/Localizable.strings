@@ -29,6 +29,11 @@
 "compose.alert.error" = "錯誤";
 "compose.button.ok" = "確定";
 
+/* Letter Sent Confirmation */
+"confirmation.title" = "信件已寄送！";
+"confirmation.message" = "您的信件已寄送給未來的自己，將在預定時間送達。";
+"confirmation.button.continue" = "繼續";
+
 /* Letter Detail */
 "letter.title" = "信件";
 "letter.untitled" = "信件";

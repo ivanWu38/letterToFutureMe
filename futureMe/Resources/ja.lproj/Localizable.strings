@@ -29,6 +29,11 @@
 "compose.alert.error" = "エラー";
 "compose.button.ok" = "OK";
 
+/* Letter Sent Confirmation */
+"confirmation.title" = "手紙を送信しました！";
+"confirmation.message" = "あなたの手紙は未来の自分に送信され、予定された時間に配達されます。";
+"confirmation.button.continue" = "続行";
+
 /* Letter Detail */
 "letter.title" = "手紙";
 "letter.untitled" = "手紙";

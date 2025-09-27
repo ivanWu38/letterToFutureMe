@@ -29,6 +29,11 @@
 "compose.alert.error" = "Error";
 "compose.button.ok" = "OK";
 
+/* Letter Sent Confirmation */
+"confirmation.title" = "Letter Sent!";
+"confirmation.message" = "Your letter has been sent to your future self and will be delivered at the scheduled time.";
+"confirmation.button.continue" = "Continue";
+
 /* Letter Detail */
 "letter.title" = "Letter";
 "letter.untitled" = "Letter";
