@@ -19,24 +19,106 @@ struct ComposeView: View {
     
     var body: some View {
         NavigationStack {
-            Form {
-                Section(NSLocalizedString("compose.section.title", comment: "")) { TextField(NSLocalizedString("compose.title_placeholder", comment: ""), text: $title) }
-                Section(NSLocalizedString("compose.section.message", comment: "")) { TextEditor(text: $bodyText).frame(minHeight: 160) }
-                Section(NSLocalizedString("compose.section.delivery_time", comment: "")) {
-                    DatePicker(NSLocalizedString("compose.deliver_at", comment: ""), selection: $date, displayedComponents: [.date, .hourAndMinute])
-                }
-                Section(NSLocalizedString("compose.section.photos", comment: "")) {
-                    PhotoPickerView(data: $img1, label: NSLocalizedString("compose.photo1", comment: ""))
-                    PhotoPickerView(data: $img2, label: NSLocalizedString("compose.photo2", comment: ""))
+            GeometryReader { geometry in
+                ZStack {
+                    // Exact background color from your design - light pink/purple
+                    Color(red: 0.91, green: 0.84, blue: 0.89)
+                        .ignoresSafeArea(.all)
+
+                    VStack(spacing: 0) {
+                        // Top navigation bar
+                        HStack {
+                            Button(action: { dismiss() }) {
+                                Text(NSLocalizedString("compose.button.cancel", comment: ""))
+                                    .font(.system(size: 17, weight: .regular))
+                                    .foregroundColor(Color(red: 0.102, green: 0.125, blue: 0.184))
+                            }
+
+                            Spacer()
+
+                            Text(NSLocalizedString("compose.title", comment: ""))
+                                .font(.system(size: 20, weight: .semibold))
+                                .foregroundColor(.black)
+
+                            Spacer()
+
+                            Button(action: { Task { await save() } }) {
+                                Text(NSLocalizedString("compose.button.schedule", comment: ""))
+                                    .font(.system(size: 17, weight: .semibold))
+                                    .foregroundColor(Color(red: 0.102, green: 0.125, blue: 0.184))
+                            }
+                            .disabled(isSaving || bodyText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+                            .opacity(isSaving || bodyText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? 0.6 : 1.0)
+                        }
+                        .padding(.horizontal, 20)
+                        .padding(.top, 60) // Account for safe area
+                        .padding(.bottom, 20)
+
+                        // Main content area - matching the mostly empty design
+                        VStack(spacing: 24) {
+                            // Title input
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text(NSLocalizedString("compose.section.title", comment: ""))
+                                    .font(.system(size: 16, weight: .medium))
+                                    .foregroundColor(.black)
+
+                                TextField(NSLocalizedString("compose.title_placeholder", comment: ""), text: $title)
+                                    .padding(12)
+                                    .background(Color.white.opacity(0.8))
+                                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                            }
+
+                            // Message input
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text(NSLocalizedString("compose.section.message", comment: ""))
+                                    .font(.system(size: 16, weight: .medium))
+                                    .foregroundColor(.black)
+
+                                TextEditor(text: $bodyText)
+                                    .padding(12)
+                                    .background(Color.white.opacity(0.8))
+                                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                                    .frame(height: 150)
+                            }
+
+                            // Delivery time
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text(NSLocalizedString("compose.section.delivery_time", comment: ""))
+                                    .font(.system(size: 16, weight: .medium))
+                                    .foregroundColor(.black)
+
+                                HStack {
+                                    Text(NSLocalizedString("compose.deliver_at", comment: ""))
+                                        .foregroundColor(.secondary)
+                                    Spacer()
+                                    DatePicker("", selection: $date, displayedComponents: [.date, .hourAndMinute])
+                                        .labelsHidden()
+                                        .colorScheme(.light)
+                                }
+                                .padding(12)
+                                .background(Color.white.opacity(0.8))
+                                .clipShape(RoundedRectangle(cornerRadius: 8))
+                            }
+
+                            // Photos section
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text(NSLocalizedString("compose.section.photos", comment: ""))
+                                    .font(.system(size: 16, weight: .medium))
+                                    .foregroundColor(.black)
+
+                                VStack(spacing: 12) {
+                                    PhotoPickerView(data: $img1, label: NSLocalizedString("compose.photo1", comment: ""))
+                                    PhotoPickerView(data: $img2, label: NSLocalizedString("compose.photo2", comment: ""))
+                                }
+                            }
+
+                            Spacer(minLength: 40)
+                        }
+                        .padding(.horizontal, 20)
+                    }
                 }
             }
-            .navigationTitle(NSLocalizedString("compose.title", comment: ""))
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) { Button(NSLocalizedString("compose.button.cancel", comment: ""), role: .cancel) { dismiss() } }
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button(NSLocalizedString("compose.button.schedule", comment: "")) { Task { await save() } }.disabled(isSaving || bodyText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
-                }
-            }
+            .navigationBarHidden(true)
             .alert(NSLocalizedString("compose.alert.error", comment: ""), isPresented: .constant(error != nil), actions: { Button(NSLocalizedString("compose.button.ok", comment: "")) { error = nil } }, message: { Text(error ?? "") })
         }
     }
@@ -61,5 +143,15 @@ struct ComposeView: View {
             self.error = error.localizedDescription
             isSaving = false
         }
+    }
+}
+
+// Custom TextField Style
+struct CustomTextFieldStyle: TextFieldStyle {
+    func _body(configuration: TextField<Self._Label>) -> some View {
+        configuration
+            .padding()
+            .background(Color.white)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }

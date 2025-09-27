@@ -5,18 +5,18 @@ struct SettingsView: View {
     @AppStorage("appLockEnabled") private var appLockEnabled: Bool = false
     @StateObject private var languageManager = LanguageManager.shared
 
-
     var body: some View {
         NavigationStack {
-            Form {
+            List {
                 Section(NSLocalizedString("settings.section.basic", comment: "")) {
-                    Toggle(NSLocalizedString("settings.app_lock", comment: ""), isOn: $appLockEnabled)
-                        .onChange(of: appLockEnabled) { _, newValue in
-                            if newValue { Task { await AppLock.shared.lockIfNeeded(force: true) } }
-                        }
-                }
+                    // App Lock Toggle
+                    HStack {
+                        Text(NSLocalizedString("settings.app_lock", comment: ""))
+                        Spacer()
+                        Toggle("", isOn: $appLockEnabled)
+                    }
 
-                Section(NSLocalizedString("settings.section.language", comment: "")) {
+                    // Language Selection
                     NavigationLink {
                         LanguageSelectionView()
                     } label: {
@@ -31,13 +31,30 @@ struct SettingsView: View {
 
                 Section(NSLocalizedString("settings.section.about", comment: "")) {
                     HStack {
-                        Text(NSLocalizedString("settings.version", comment: ""))
+                        Text("Version")
                         Spacer()
-                        Text(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0")
+                        Text("1.0.0")
+                            .foregroundStyle(.secondary)
+                    }
+
+                    HStack {
+                        Text("Developer")
+                        Spacer()
+                        Text("Future Me Team")
+                            .foregroundStyle(.secondary)
                     }
                 }
             }
+            .listStyle(.insetGrouped)
+            .scrollContentBackground(.hidden)
+            .background {
+                Image("settings_background")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .ignoresSafeArea(.all)
+            }
             .navigationTitle(NSLocalizedString("settings.title", comment: ""))
+            .navigationBarTitleDisplayMode(.large)
         }
     }
 }

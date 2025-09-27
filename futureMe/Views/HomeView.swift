@@ -9,35 +9,40 @@ struct HomeView: View {
     
     var body: some View {
         NavigationStack {
-            ScrollView {
-                VStack(spacing: 24) {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 28).fill(NordicTheme.bg)
-                            .frame(height: 240)
-                            .overlay(alignment: .bottomLeading) {
-                                // simple geometric landscape
-                                GeometryReader { geo in
-                                    Path { p in
-                                        let w = geo.size.width, h = geo.size.height
-                                        p.move(to: .init(x: 0, y: h*0.65))
-                                        p.addLine(to: .init(x: w, y: h*0.45))
-                                        p.addLine(to: .init(x: w, y: h))
-                                        p.addLine(to: .init(x: 0, y: h))
-                                        p.closeSubpath()
-                                    }.fill(NordicTheme.slate.opacity(0.5))
-                                }
-                                .clipShape(RoundedRectangle(cornerRadius: 28))
-                            }
-                        Text(NSLocalizedString("home.title", comment: "")).font(.nordicTitle())
+            GeometryReader { geometry in
+                ZStack {
+                    // Background image
+                    Image("home")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .ignoresSafeArea(.all)
+
+                    VStack(spacing: 0) {
+                        // Title text positioned on the mountain area
+                        Text(NSLocalizedString("home.title", comment: ""))
+                            .font(.system(size: 26, weight: .bold, design: .serif))
+                            .foregroundColor(.black)
+                            .multilineTextAlignment(.center)
+                            .padding(.top, 80)
+
+                        Spacer()
+
+                        // Send button positioned in the bottom area
+                        Button(action: { showCompose = true }) {
+                            Text(NSLocalizedString("home.send_letter", comment: ""))
+                                .font(.system(size: 16, weight: .medium))
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 48)
+                                .background(Color(red: 0.52, green: 0.58, blue: 0.70))
+                                .clipShape(RoundedRectangle(cornerRadius: 12))
+                        }
+                        .padding(.horizontal, 32)
+                        .padding(.bottom, 180)
                     }
-                    
-                    
-                    NordicButton(title: NSLocalizedString("home.send_letter", comment: "")) { showCompose = true }
-                        .padding(.horizontal)
                 }
-                .padding()
             }
-            .navigationTitle("home").navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
             .sheet(isPresented: $showCompose) { ComposeView() }
             .onReceive(NotificationCenter.default.publisher(for: .init("openCompose"))) { _ in showCompose = true }
         }
