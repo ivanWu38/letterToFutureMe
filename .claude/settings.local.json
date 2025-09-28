@@ -5,7 +5,18 @@
       "Bash(swiftc:*)",
       "Read(//Users/wuyuping/Desktop/**)",
       "Bash(sips:*)",
-      "Read(//Users/wuyuping/Library/Developer/Xcode/DerivedData/futureMe-ekjrpmnfoxspsvdmlisrtyeueyba/Build/Intermediates.noindex/futureMe.build/Debug-iphonesimulator/futureMe.build/DerivedSources/**)"
+      "Read(//Users/wuyuping/Library/Developer/Xcode/DerivedData/futureMe-ekjrpmnfoxspsvdmlisrtyeueyba/Build/Intermediates.noindex/futureMe.build/Debug-iphonesimulator/futureMe.build/DerivedSources/**)",
+      "Bash(find:*)",
+      "Bash(cat:*)",
+      "Bash(xcrun simctl list:*)",
+      "WebSearch",
+      "WebFetch(domain:developers.google.com)",
+      "Bash(python3:*)",
+      "Bash(xcrun simctl boot:*)",
+      "Bash(xcrun simctl install:*)",
+      "Bash(xcrun simctl launch:*)",
+      "Read(//Users/wuyuping/Library/Developer/Xcode/DerivedData/futureMe-ekjrpmnfoxspsvdmlisrtyeueyba/Build/Products/Debug-iphonesimulator/futureMe.app/**)",
+      "Bash(plutil:*)"
     ],
     "deny": [],
     "ask": []

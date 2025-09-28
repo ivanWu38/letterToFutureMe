@@ -107,9 +107,17 @@ struct InboxView: View {
             .onReceive(NotificationManager.shared.$lastOpenedLetterID) { id in
                 guard let id, let match = deliveredLetters.first(where: { $0.id == id }) else { return }
                 selection = match
+                // Update app badge when user opens letter from notification
+                updateAppBadgeCount()
             }
             .sheet(item: $selection) { letter in LetterDetailView(letter: letter) }
         }
+    }
+
+    private func updateAppBadgeCount() {
+        let now = currentTime
+        let unreadCount = letters.filter { $0.deliverAt <= now && !$0.isRead }.count
+        NotificationManager.shared.updateAppBadge(unreadCount: unreadCount)
     }
 
     private func letterCard(_ letter: Letter) -> some View {

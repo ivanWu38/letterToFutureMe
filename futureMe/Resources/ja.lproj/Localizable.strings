@@ -63,6 +63,9 @@
 /* Notifications */
 "notification.title" = "未来からの手紙";
 "notification.body_default" = "あなたの未来の手紙が届きました。";
+"notification.body_with_title" = "あなたの手紙「%@」が届きました！";
+"notification.subtitle" = "配達日時：%@";
+"notification.action.open" = "開く";
 
 /* App Lock */
 "applock.reason" = "手紙を表示するにはロックを解除してください";

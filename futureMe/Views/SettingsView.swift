@@ -80,7 +80,7 @@ struct SettingsView: View {
                                     Text("Developer")
                                         .foregroundColor(colorScheme == .dark ? .white : .primary)
                                     Spacer()
-                                    Text("Future Me Team")
+                                    Text("kureIkuhei design")
                                         .foregroundStyle(colorScheme == .dark ? .gray : .secondary)
                                 }
                             }

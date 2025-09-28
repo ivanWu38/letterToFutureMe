@@ -57,6 +57,9 @@
 /* Notifications */
 "notification.title" = "來自未來的信";
 "notification.body_default" = "您的未來信件已送達。";
+"notification.body_with_title" = "您的信件「%@」已送達！";
+"notification.subtitle" = "送達時間：%@";
+"notification.action.open" = "開啟";
 
 /* App Lock */
 "applock.reason" = "使用 Face ID 或密碼存取您的信件";

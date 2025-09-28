@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 
 struct LetterDetailView: View {
@@ -6,8 +7,9 @@ struct LetterDetailView: View {
     @Environment(\.modelContext) private var context
     @Environment(\.colorScheme) private var colorScheme
     @ObservedObject private var languageManager = LanguageManager.shared
-    
-    
+    @Query(sort: [SortDescriptor(\Letter.deliverAt, order: .forward)]) private var allLetters: [Letter]
+
+
     @State var letter: Letter
     
     
@@ -62,9 +64,17 @@ struct LetterDetailView: View {
                 await MainActor.run {
                     letter.isRead = true
                     try? context.save()
+                    // Calculate unread count and update app badge
+                    updateAppBadgeCount()
                 }
             }
         }
+    }
+
+    private func updateAppBadgeCount() {
+        let now = Date()
+        let unreadCount = allLetters.filter { $0.deliverAt <= now && !$0.isRead }.count
+        NotificationManager.shared.updateAppBadge(unreadCount: unreadCount)
     }
     
     
@@ -72,6 +82,8 @@ struct LetterDetailView: View {
         NotificationManager.shared.removePending(id: letter.id)
         context.delete(letter)
         try? context.save()
+        // Update app badge after deleting letter
+        updateAppBadgeCount()
         dismiss()
     }
     

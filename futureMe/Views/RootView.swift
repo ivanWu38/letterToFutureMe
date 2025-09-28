@@ -57,6 +57,8 @@ struct RootView: View {
             currentTime = Date()
             updateTrigger += 1
             configureTabBarAppearance()
+            // Update app badge on app launch
+            updateAppBadgeOnAppear()
         }
         .onChange(of: colorScheme) { _, _ in
             configureTabBarAppearance()
@@ -68,6 +70,8 @@ struct RootView: View {
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
             currentTime = Date()
             updateTrigger += 1
+            // Update app badge when returning to foreground
+            updateAppBadgeOnAppear()
         }
         .onChange(of: tab) { _, newTab in
             // 提供觸覺反饋 - 輕微震動
@@ -82,6 +86,12 @@ struct RootView: View {
         .fullScreenCover(isPresented: $appLock.showLockScreen) {
             LockScreenView()
         }
+    }
+
+    private func updateAppBadgeOnAppear() {
+        let now = Date()
+        let unreadCount = letters.filter { $0.deliverAt <= now && !$0.isRead }.count
+        NotificationManager.shared.updateAppBadge(unreadCount: unreadCount)
     }
 
     private func configureTabBarAppearance() {

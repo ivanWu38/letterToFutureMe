@@ -1,7 +1,9 @@
 import SwiftUI
+import UIKit
 
 struct LetterSentConfirmationView: View {
     @ObservedObject private var languageManager = LanguageManager.shared
+    @State private var isAdPresenting = false
     let onDismiss: () -> Void
 
     var body: some View {
@@ -41,7 +43,7 @@ struct LetterSentConfirmationView: View {
                 Spacer()
 
                 // Confirm button
-                Button(action: onDismiss) {
+                Button(action: handleContinueAction) {
                     Text(NSLocalizedString("confirmation.button.continue", comment: ""))
                         .font(.system(size: 18, weight: .semibold))
                         .foregroundColor(.white)
@@ -50,10 +52,60 @@ struct LetterSentConfirmationView: View {
                         .background(Color(red: 0.306, green: 0.380, blue: 0.533))
                         .clipShape(RoundedRectangle(cornerRadius: 16))
                 }
+                .disabled(isAdPresenting)
+                .opacity(isAdPresenting ? 0.6 : 1.0)
                 .padding(.horizontal, 40)
                 .padding(.bottom, 60)
             }
+
         }
+    }
+
+    private func handleContinueAction() {
+        // Get the root view controller from the window scene
+        let presentingViewController = getRootViewController()
+
+        guard let presentingViewController = presentingViewController else {
+            print("⚠️ Could not find root view controller, proceeding without ad")
+            onDismiss()
+            return
+        }
+
+        // First dismiss any active keyboard
+        presentingViewController.view.endEditing(true)
+
+        isAdPresenting = true
+
+        // Wait for keyboard dismissal and view stabilization
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            // Show interstitial ad after keyboard is dismissed
+            AdManager.shared.presentInterstitialAd(from: presentingViewController) {
+                // This completion handler is called when the ad is dismissed
+                DispatchQueue.main.async { [self] in
+                    isAdPresenting = false
+                    onDismiss()
+                }
+            }
+        }
+    }
+
+    private func getRootViewController() -> UIViewController? {
+        // Get the root view controller from the active window scene
+        guard let windowScene = UIApplication.shared.connectedScenes
+            .compactMap({ $0 as? UIWindowScene })
+            .first(where: { $0.activationState == .foregroundActive }),
+              let window = windowScene.windows.first(where: { $0.isKeyWindow }),
+              let rootViewController = window.rootViewController else {
+            return nil
+        }
+
+        // Find the topmost presented view controller
+        var topViewController = rootViewController
+        while let presentedViewController = topViewController.presentedViewController {
+            topViewController = presentedViewController
+        }
+
+        return topViewController
     }
 }
 

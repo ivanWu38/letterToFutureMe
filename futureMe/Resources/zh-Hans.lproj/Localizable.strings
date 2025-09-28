@@ -63,6 +63,9 @@
 /* Notifications */
 "notification.title" = "来自未来的信";
 "notification.body_default" = "您的未来信件已送达。";
+"notification.body_with_title" = "您的信件「%@」已送达！";
+"notification.subtitle" = "送达时间：%@";
+"notification.action.open" = "打开";
 
 /* App Lock */
 "applock.reason" = "解锁以查看您的信件";

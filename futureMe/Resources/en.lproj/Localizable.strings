@@ -63,6 +63,9 @@
 /* Notifications */
 "notification.title" = "Letter to Future You";
 "notification.body_default" = "Your future letter has arrived.";
+"notification.body_with_title" = "Your letter '%@' has arrived!";
+"notification.subtitle" = "Delivered on %@";
+"notification.action.open" = "Open";
 
 /* App Lock */
 "applock.reason" = "Unlock to view your letters";
