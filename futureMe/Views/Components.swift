@@ -22,14 +22,16 @@ struct NordicButton: View {
 struct PhotoPickerView: View {
     @Binding var data: Data?
     @State private var item: PhotosPickerItem?
-    
-    
-    var label: String
-    
-    
+
+
+    var label: String = ""
+
+
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text(label).font(.subheadline).foregroundStyle(.secondary)
+            if !label.isEmpty {
+                Text(label).font(.subheadline).foregroundStyle(.secondary)
+            }
             HStack(spacing: 12) {
                 if let data, let image = UIImage(data: data) {
                     Image(uiImage: image).resizable().scaledToFill().frame(width: 84, height: 84).clipShape(RoundedRectangle(cornerRadius: 12))

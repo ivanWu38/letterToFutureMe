@@ -117,8 +117,8 @@ struct ComposeView: View {
                                     .foregroundColor(colorScheme == .dark ? .white : .black)
 
                                 VStack(spacing: 12) {
-                                    PhotoPickerView(data: $img1, label: NSLocalizedString("compose.photo1", comment: ""))
-                                    PhotoPickerView(data: $img2, label: NSLocalizedString("compose.photo2", comment: ""))
+                                    PhotoPickerView(data: $img1)
+                                    PhotoPickerView(data: $img2)
                                 }
                             }
 
