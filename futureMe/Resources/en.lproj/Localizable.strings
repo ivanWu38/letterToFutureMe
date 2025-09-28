@@ -52,6 +52,12 @@
 "settings.section.about" = "About this app";
 "settings.app_lock" = "Password Lock (Face ID)";
 "settings.language" = "Language";
+
+/* App Lock */
+"applock.reason" = "Use Face ID or passcode to access your letters";
+"applock.title" = "App Locked";
+"applock.message" = "Use Face ID or your device passcode to unlock the app";
+"applock.unlock" = "Unlock with Face ID";
 "settings.version" = "Version";
 
 /* Notifications */

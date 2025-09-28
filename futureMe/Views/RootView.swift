@@ -1,11 +1,14 @@
 import SwiftUI
 import SwiftData
+import UIKit
 
 
 struct RootView: View {
     @Environment(\.modelContext) private var context
+    @Environment(\.colorScheme) private var colorScheme
     @Query(sort: [SortDescriptor(\Letter.deliverAt, order: .forward)]) private var letters: [Letter]
     @ObservedObject private var languageManager = LanguageManager.shared
+    @ObservedObject private var appLock = AppLock.shared
     @State private var tab: Int = 1 // 0: Inbox, 1: Home, 2: Settings
     @State private var showLock = UserDefaults.standard.bool(forKey: "appLockEnabled")
     @State private var currentTime = Date()
@@ -49,10 +52,14 @@ struct RootView: View {
                 .tabItem { Label(NSLocalizedString("tab.settings", comment: ""), systemImage: "gearshape") }
                 .tag(2)
         }
-        .tint(NordicTheme.slate)
+        .tint(colorScheme == .dark ? Color(red: 0.102, green: 0.125, blue: 0.184) : NordicTheme.slate)
         .onAppear {
             currentTime = Date()
             updateTrigger += 1
+            configureTabBarAppearance()
+        }
+        .onChange(of: colorScheme) { _, _ in
+            configureTabBarAppearance()
         }
         .onReceive(Timer.publish(every: 30, on: .main, in: .common).autoconnect()) { _ in
             currentTime = Date()
@@ -63,11 +70,43 @@ struct RootView: View {
             updateTrigger += 1
         }
         .onChange(of: tab) { _, newTab in
-            // Tab switching logic if needed in the future
+            // 提供觸覺反饋 - 輕微震動
+            let impactFeedback = UIImpactFeedbackGenerator(style: .light)
+            impactFeedback.impactOccurred()
         }
-        .task { await AppLock.shared.lockIfNeeded() }
-        .onReceive(AppLock.shared.$shouldLock) { should in
-            if should { Task { await AppLock.shared.lockIfNeeded() } }
+        .task {
+            if UserDefaults.standard.bool(forKey: "appLockEnabled") {
+                await appLock.lockIfNeeded()
+            }
+        }
+        .fullScreenCover(isPresented: $appLock.showLockScreen) {
+            LockScreenView()
+        }
+    }
+
+    private func configureTabBarAppearance() {
+        if colorScheme == .dark {
+            let appearance = UITabBarAppearance()
+            appearance.configureWithTransparentBackground()
+
+            // 未選中狀態的顏色 - #4E6185
+            appearance.stackedLayoutAppearance.normal.iconColor = UIColor(red: 78/255.0, green: 97/255.0, blue: 133/255.0, alpha: 1.0)
+            appearance.stackedLayoutAppearance.normal.titleTextAttributes = [
+                .foregroundColor: UIColor(red: 78/255.0, green: 97/255.0, blue: 133/255.0, alpha: 1.0)
+            ]
+
+            // 選中狀態的顏色 - #1A202F
+            appearance.stackedLayoutAppearance.selected.iconColor = UIColor(red: 0.102, green: 0.125, blue: 0.184, alpha: 1.0)
+            appearance.stackedLayoutAppearance.selected.titleTextAttributes = [
+                .foregroundColor: UIColor(red: 0.102, green: 0.125, blue: 0.184, alpha: 1.0)
+            ]
+
+            UITabBar.appearance().standardAppearance = appearance
+            UITabBar.appearance().scrollEdgeAppearance = appearance
+        } else {
+            // Reset to default appearance for light mode
+            UITabBar.appearance().standardAppearance = UITabBarAppearance()
+            UITabBar.appearance().scrollEdgeAppearance = nil
         }
     }
 }

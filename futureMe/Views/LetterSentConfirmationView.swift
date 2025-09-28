@@ -16,11 +16,11 @@ struct LetterSentConfirmationView: View {
                 // Success icon
                 ZStack {
                     Circle()
-                        .fill(Color(red: 0.102, green: 0.125, blue: 0.184))
+                        .fill(Color(red: 0.306, green: 0.380, blue: 0.533))
                         .frame(width: 120, height: 120)
 
                     Image(systemName: "envelope.circle.fill")
-                        .font(.system(size: 60))
+                        .font(.system(size: 130))
                         .foregroundColor(.white)
                 }
 
@@ -47,7 +47,7 @@ struct LetterSentConfirmationView: View {
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .frame(height: 56)
-                        .background(Color(red: 0.102, green: 0.125, blue: 0.184))
+                        .background(Color(red: 0.306, green: 0.380, blue: 0.533))
                         .clipShape(RoundedRectangle(cornerRadius: 16))
                 }
                 .padding(.horizontal, 40)

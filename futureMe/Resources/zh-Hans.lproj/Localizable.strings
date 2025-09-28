@@ -52,6 +52,12 @@
 "settings.section.about" = "关于此应用";
 "settings.app_lock" = "密码锁定 (Face ID)";
 "settings.language" = "语言";
+
+/* App Lock */
+"applock.reason" = "使用 Face ID 或密码访问您的信件";
+"applock.title" = "应用已锁定";
+"applock.message" = "使用 Face ID 或设备密码解锁应用";
+"applock.unlock" = "使用 Face ID 解锁";
 "settings.version" = "版本";
 
 /* Notifications */

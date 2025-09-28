@@ -4,6 +4,7 @@ import SwiftUI
 struct LetterDetailView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var context
+    @Environment(\.colorScheme) private var colorScheme
     @ObservedObject private var languageManager = LanguageManager.shared
     
     
@@ -24,12 +25,17 @@ struct LetterDetailView: View {
             }
             .navigationTitle(NSLocalizedString("letter.title", comment: ""))
             .toolbar {
-                ToolbarItem(placement: .topBarLeading) { Button(NSLocalizedString("letter.button.close", comment: "")) { dismiss() } }
+                ToolbarItem(placement: .topBarLeading) {
+                    Button(NSLocalizedString("letter.button.close", comment: "")) { dismiss() }
+                        .foregroundColor(colorScheme == .dark ? .white : .primary)
+                }
                 ToolbarItem(placement: .topBarTrailing) {
                     Menu {
                         Button(role: .destructive) { deleteLetter() } label: { Label(NSLocalizedString("letter.button.delete", comment: ""), systemImage: "trash") }
-                        Button(NSLocalizedString("letter.button.reschedule", comment: "")) { reschedule() }
-                    } label: { Image(systemName: "ellipsis.circle") }
+                    } label: {
+                        Image(systemName: "ellipsis.circle")
+                            .foregroundColor(colorScheme == .dark ? .white : .primary)
+                    }
                 }
             }
             .onDisappear {
@@ -69,11 +75,4 @@ struct LetterDetailView: View {
         dismiss()
     }
     
-    
-    private func reschedule() {
-        // simple example: push one day forward
-        letter.deliverAt = Calendar.current.date(byAdding: .day, value: 1, to: Date()) ?? Date().addingTimeInterval(86400)
-        try? context.save()
-        Task { try? await NotificationManager.shared.schedule(for: letter) }
-    }
 }

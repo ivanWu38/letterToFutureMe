@@ -5,9 +5,9 @@ import SwiftData
 struct ComposeView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var context
+    @Environment(\.colorScheme) private var colorScheme
     @ObservedObject private var languageManager = LanguageManager.shared
-    
-    
+
     @State private var title: String = ""
     @State private var bodyText: String = ""
     @State private var date: Date = Calendar.current.date(byAdding: .minute, value: 2, to: .now) ?? .now
@@ -16,14 +16,20 @@ struct ComposeView: View {
     @State private var isSaving = false
     @State private var error: String?
     @State private var showingConfirmation = false
+
+    @FocusState private var isFieldFocused: FocusedField?
+
+    enum FocusedField {
+        case title, message
+    }
     
     
     var body: some View {
         NavigationStack {
             GeometryReader { geometry in
                 ZStack {
-                    // Exact background color from your design - light pink/purple
-                    Color(red: 0.91, green: 0.84, blue: 0.89)
+                    // Background color - adaptive for light/dark mode
+                    (colorScheme == .dark ? Color(red: 0.306, green: 0.381, blue: 0.533) : Color(red: 0.91, green: 0.84, blue: 0.89))
                         .ignoresSafeArea(.all)
 
                     VStack(spacing: 0) {
@@ -39,7 +45,7 @@ struct ComposeView: View {
 
                             Text(NSLocalizedString("compose.title", comment: ""))
                                 .font(.system(size: 20, weight: .semibold))
-                                .foregroundColor(.black)
+                                .foregroundColor(colorScheme == .dark ? .white : .black)
 
                             Spacer()
 
@@ -52,7 +58,7 @@ struct ComposeView: View {
                             .opacity(isSaving || bodyText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? 0.6 : 1.0)
                         }
                         .padding(.horizontal, 20)
-                        .padding(.top, 60) // Account for safe area
+                        .padding(.top, 60)
                         .padding(.bottom, 20)
 
                         // Main content area - matching the mostly empty design
@@ -61,43 +67,46 @@ struct ComposeView: View {
                             VStack(alignment: .leading, spacing: 8) {
                                 Text(NSLocalizedString("compose.section.title", comment: ""))
                                     .font(.system(size: 16, weight: .medium))
-                                    .foregroundColor(.black)
+                                    .foregroundColor(colorScheme == .dark ? .white : .black)
 
                                 TextField(NSLocalizedString("compose.title_placeholder", comment: ""), text: $title)
                                     .padding(12)
-                                    .background(Color.white.opacity(0.8))
+                                    .background(colorScheme == .dark ? Color(red: 0.52, green: 0.58, blue: 0.70) : Color.white.opacity(0.8))
+                                    .foregroundColor(colorScheme == .dark ? .white : .black)
                                     .clipShape(RoundedRectangle(cornerRadius: 8))
+                                    .focused($isFieldFocused, equals: .title)
                             }
 
                             // Message input
                             VStack(alignment: .leading, spacing: 8) {
                                 Text(NSLocalizedString("compose.section.message", comment: ""))
                                     .font(.system(size: 16, weight: .medium))
-                                    .foregroundColor(.black)
+                                    .foregroundColor(colorScheme == .dark ? .white : .black)
 
                                 TextEditor(text: $bodyText)
                                     .padding(12)
-                                    .background(Color.white.opacity(0.8))
+                                    .scrollContentBackground(.hidden)
+                                    .background(colorScheme == .dark ? Color(red: 0.52, green: 0.58, blue: 0.70) : Color.white.opacity(0.8))
+                                    .foregroundColor(colorScheme == .dark ? .white : .black)
                                     .clipShape(RoundedRectangle(cornerRadius: 8))
                                     .frame(height: 150)
+                                    .focused($isFieldFocused, equals: .message)
                             }
 
                             // Delivery time
                             VStack(alignment: .leading, spacing: 8) {
                                 Text(NSLocalizedString("compose.section.delivery_time", comment: ""))
                                     .font(.system(size: 16, weight: .medium))
-                                    .foregroundColor(.black)
+                                    .foregroundColor(colorScheme == .dark ? .white : .black)
 
                                 HStack {
-                                    Text(NSLocalizedString("compose.deliver_at", comment: ""))
-                                        .foregroundColor(.secondary)
-                                    Spacer()
+//                                    
                                     DatePicker("", selection: $date, displayedComponents: [.date, .hourAndMinute])
                                         .labelsHidden()
-                                        .colorScheme(.light)
+                                        .colorScheme(colorScheme == .dark ? .light : colorScheme)
                                 }
                                 .padding(12)
-                                .background(Color.white.opacity(0.8))
+                                .background(colorScheme == .dark ? Color(red: 0.52, green: 0.58, blue: 0.70) : Color.white.opacity(0.8))
                                 .clipShape(RoundedRectangle(cornerRadius: 8))
                             }
 
@@ -105,7 +114,7 @@ struct ComposeView: View {
                             VStack(alignment: .leading, spacing: 8) {
                                 Text(NSLocalizedString("compose.section.photos", comment: ""))
                                     .font(.system(size: 16, weight: .medium))
-                                    .foregroundColor(.black)
+                                    .foregroundColor(colorScheme == .dark ? .white : .black)
 
                                 VStack(spacing: 12) {
                                     PhotoPickerView(data: $img1, label: NSLocalizedString("compose.photo1", comment: ""))
@@ -117,6 +126,10 @@ struct ComposeView: View {
                         }
                         .padding(.horizontal, 20)
                     }
+                }
+                .onTapGesture {
+                    // 點擊空白區域收起鍵盤
+                    isFieldFocused = nil
                 }
             }
             .navigationBarHidden(true)

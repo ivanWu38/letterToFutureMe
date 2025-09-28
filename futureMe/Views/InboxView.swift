@@ -4,6 +4,7 @@ import SwiftData
 
 struct InboxView: View {
     @Environment(\.modelContext) private var context
+    @Environment(\.colorScheme) private var colorScheme
     @Query(sort: [SortDescriptor(\Letter.deliverAt, order: .reverse)]) private var letters: [Letter]
     @ObservedObject private var languageManager = LanguageManager.shared
     @State private var selection: Letter?
@@ -28,14 +29,14 @@ struct InboxView: View {
                         HStack {
                             Image(systemName: "chevron.left")
                                 .font(.system(size: 18, weight: .medium))
-                                .foregroundColor(.black)
+                                .foregroundColor(colorScheme == .dark ? .white : .black)
                                 .opacity(0) // Invisible for balance
 
                             Spacer()
 
                             Text(NSLocalizedString("inbox.title", comment: ""))
                                 .font(.system(size: 20, weight: .semibold))
-                                .foregroundColor(.black)
+                                .foregroundColor(colorScheme == .dark ? .white : .black)
 
                             Spacer()
 
@@ -45,7 +46,7 @@ struct InboxView: View {
                                 .opacity(0)
                         }
                         .padding(.horizontal, 20)
-                        .padding(.top, 60) // Account for safe area
+                        .padding(.top, 60)
                         .padding(.bottom, 20)
 
                         // Main content area - mostly empty like in design
@@ -69,15 +70,15 @@ struct InboxView: View {
                                 VStack(spacing: 16) {
                                     Image(systemName: "envelope")
                                         .font(.system(size: 48))
-                                        .foregroundColor(.black.opacity(0.6))
+                                        .foregroundColor(colorScheme == .dark ? .white.opacity(0.6) : .black.opacity(0.6))
 
                                     Text(NSLocalizedString("inbox.empty.title", comment: ""))
                                         .font(.system(size: 18, weight: .medium))
-                                        .foregroundColor(.black)
+                                        .foregroundColor(colorScheme == .dark ? .white : .black)
 
                                     Text(NSLocalizedString("inbox.empty.description", comment: ""))
                                         .font(.system(size: 14))
-                                        .foregroundColor(.black.opacity(0.7))
+                                        .foregroundColor(colorScheme == .dark ? .white.opacity(0.7) : .black.opacity(0.7))
                                         .multilineTextAlignment(.center)
                                         .padding(.horizontal, 40)
                                 }
@@ -125,25 +126,25 @@ struct InboxView: View {
                     }
                 }())
                 .font(.system(size: 20))
-                .foregroundColor(.black.opacity(0.7))
+                .foregroundColor(colorScheme == .dark ? .white.opacity(0.7) : .black.opacity(0.7))
 
                 // Letter content
                 VStack(alignment: .leading, spacing: 2) {
                     Text(letter.title.isEmpty ? NSLocalizedString("inbox.no_title", comment: "") : letter.title)
                         .font(.system(size: 14, weight: .medium))
-                        .foregroundColor(.black)
+                        .foregroundColor(colorScheme == .dark ? .white : .black)
                         .lineLimit(1)
 
                     Text(letter.deliverAt, style: .date)
                         .font(.system(size: 12))
-                        .foregroundColor(.black.opacity(0.6))
+                        .foregroundColor(colorScheme == .dark ? .white.opacity(0.6) : .black.opacity(0.6))
                 }
 
                 Spacer()
             }
             .padding(.vertical, 12)
             .padding(.horizontal, 16)
-            .background(Color.white.opacity(0.8))
+            .background(colorScheme == .dark ? Color.gray.opacity(0.2) : Color.white.opacity(0.8))
             .clipShape(RoundedRectangle(cornerRadius: 8))
         }
         .buttonStyle(PlainButtonStyle())

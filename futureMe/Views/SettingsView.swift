@@ -4,57 +4,93 @@ import SwiftUI
 struct SettingsView: View {
     @AppStorage("appLockEnabled") private var appLockEnabled: Bool = false
     @StateObject private var languageManager = LanguageManager.shared
+    @Environment(\.colorScheme) private var colorScheme
 
     var body: some View {
         NavigationStack {
-            List {
-                Section(NSLocalizedString("settings.section.basic", comment: "")) {
-                    // App Lock Toggle
-                    HStack {
-                        Text(NSLocalizedString("settings.app_lock", comment: ""))
-                        Spacer()
-                        Toggle("", isOn: $appLockEnabled)
-                    }
+            GeometryReader { geometry in
+                ZStack {
+                    // Background image - 與 Home 和 Inbox 相同的設定方式
+                    Image("settings")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .ignoresSafeArea(.all)
 
-                    // Language Selection
-                    NavigationLink {
-                        LanguageSelectionView()
-                    } label: {
+                    VStack(spacing: 0) {
+                        // Top navigation bar with title - 模仿 Inbox 的結構
                         HStack {
-                            Text(NSLocalizedString("settings.language", comment: ""))
+                            Image(systemName: "chevron.left")
+                                .font(.system(size: 18, weight: .medium))
+                                .foregroundColor(colorScheme == .dark ? .white : .black)
+                                .opacity(0) // Invisible for balance
+
                             Spacer()
-                            Text(languageManager.currentLanguage.nativeDisplayName)
-                                .foregroundStyle(.secondary)
+
+                            Text(NSLocalizedString("settings.title", comment: ""))
+                                .font(.system(size: 20, weight: .semibold))
+                                .foregroundColor(colorScheme == .dark ? .white : .black)
+
+                            Spacer()
+
+                            // Invisible placeholder for balance
+                            Image(systemName: "chevron.left")
+                                .font(.system(size: 18, weight: .medium))
+                                .opacity(0)
                         }
-                    }
-                }
+                        .padding(.horizontal, 20)
+                        .padding(.top, 60)
+                        .padding(.bottom, 20)
 
-                Section(NSLocalizedString("settings.section.about", comment: "")) {
-                    HStack {
-                        Text("Version")
-                        Spacer()
-                        Text("1.0.0")
-                            .foregroundStyle(.secondary)
-                    }
+                        // Settings content
+                        List {
+                            Section(NSLocalizedString("settings.section.basic", comment: "")) {
+                                // App Lock Toggle
+                                HStack {
+                                    Text(NSLocalizedString("settings.app_lock", comment: ""))
+                                        .foregroundColor(colorScheme == .dark ? .white : .primary)
+                                    Spacer()
+                                    Toggle("", isOn: $appLockEnabled)
+                                        .tint(Color(red: 0.518, green: 0.604, blue: 0.733))
+                                }
 
-                    HStack {
-                        Text("Developer")
-                        Spacer()
-                        Text("Future Me Team")
-                            .foregroundStyle(.secondary)
+                                // Language Selection
+                                NavigationLink {
+                                    LanguageSelectionView()
+                                } label: {
+                                    HStack {
+                                        Text(NSLocalizedString("settings.language", comment: ""))
+                                            .foregroundColor(colorScheme == .dark ? .white : .primary)
+                                        Spacer()
+                                        Text(languageManager.currentLanguage.nativeDisplayName)
+                                            .foregroundStyle(colorScheme == .dark ? .gray : .secondary)
+                                    }
+                                }
+                            }
+
+                            Section(NSLocalizedString("settings.section.about", comment: "")) {
+                                HStack {
+                                    Text("Version")
+                                        .foregroundColor(colorScheme == .dark ? .white : .primary)
+                                    Spacer()
+                                    Text("1.0.0")
+                                        .foregroundStyle(colorScheme == .dark ? .gray : .secondary)
+                                }
+
+                                HStack {
+                                    Text("Developer")
+                                        .foregroundColor(colorScheme == .dark ? .white : .primary)
+                                    Spacer()
+                                    Text("Future Me Team")
+                                        .foregroundStyle(colorScheme == .dark ? .gray : .secondary)
+                                }
+                            }
+                        }
+                        .listStyle(.insetGrouped)
+                        .scrollContentBackground(.hidden)
                     }
                 }
             }
-            .listStyle(.insetGrouped)
-            .scrollContentBackground(.hidden)
-            .background {
-                Image("settings_background")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .ignoresSafeArea(.all)
-            }
-            .navigationTitle(NSLocalizedString("settings.title", comment: ""))
-            .navigationBarTitleDisplayMode(.large)
+            .navigationBarHidden(true)
         }
     }
 }
@@ -62,12 +98,14 @@ struct SettingsView: View {
 struct LanguageSelectionView: View {
     @StateObject private var languageManager = LanguageManager.shared
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.colorScheme) private var colorScheme
 
     var body: some View {
         List {
             ForEach(Language.allCases, id: \.rawValue) { language in
                 HStack {
                     Text(language.nativeDisplayName)
+                        .foregroundColor(colorScheme == .dark ? .white : .primary)
                     Spacer()
                     if languageManager.currentLanguage == language {
                         Image(systemName: "checkmark")
@@ -84,7 +122,20 @@ struct LanguageSelectionView: View {
                 }
             }
         }
+        .scrollContentBackground(.hidden)
         .navigationTitle(NSLocalizedString("settings.language", comment: ""))
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button(action: { dismiss() }) {
+                    HStack {
+                        Image(systemName: "chevron.left")
+                        Text(NSLocalizedString("settings.title", comment: ""))
+                    }
+                    .foregroundColor(colorScheme == .dark ? .white : .primary)
+                }
+            }
+        }
+        .navigationBarBackButtonHidden(true)
     }
 }

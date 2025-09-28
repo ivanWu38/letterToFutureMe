@@ -59,7 +59,10 @@
 "notification.body_default" = "您的未來信件已送達。";
 
 /* App Lock */
-"applock.reason" = "解鎖以查看您的信件";
+"applock.reason" = "使用 Face ID 或密碼存取您的信件";
+"applock.title" = "應用程式已鎖定";
+"applock.message" = "使用 Face ID 或裝置密碼解鎖應用程式";
+"applock.unlock" = "使用 Face ID 解鎖";
 
 /* Language Names */
 "language.english" = "English";

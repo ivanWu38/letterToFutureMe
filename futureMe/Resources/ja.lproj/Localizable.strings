@@ -52,6 +52,12 @@
 "settings.section.about" = "このアプリについて";
 "settings.app_lock" = "パスワードロック (Face ID)";
 "settings.language" = "言語";
+
+/* App Lock */
+"applock.reason" = "Face ID またはパスコードで手紙にアクセス";
+"applock.title" = "アプリがロックされています";
+"applock.message" = "Face ID またはデバイスパスコードでアプリをロック解除してください";
+"applock.unlock" = "Face ID でロック解除";
 "settings.version" = "バージョン";
 
 /* Notifications */
