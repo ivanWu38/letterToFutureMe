@@ -81,7 +81,7 @@ struct SettingsView: View {
                                     Text("Version")
                                         .foregroundColor(colorScheme == .dark ? .white : .primary)
                                     Spacer()
-                                    Text("1.0.0")
+                                    Text("1.0.1")
                                         .foregroundStyle(colorScheme == .dark ? .gray : .secondary)
                                 }
 
