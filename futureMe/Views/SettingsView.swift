@@ -5,6 +5,7 @@ struct SettingsView: View {
     @AppStorage("appLockEnabled") private var appLockEnabled: Bool = false
     @StateObject private var languageManager = LanguageManager.shared
     @Environment(\.colorScheme) private var colorScheme
+    @State private var showingAuthPrompt = false
 
     var body: some View {
         NavigationStack {
@@ -51,6 +52,14 @@ struct SettingsView: View {
                                     Spacer()
                                     Toggle("", isOn: $appLockEnabled)
                                         .tint(Color(red: 0.518, green: 0.604, blue: 0.733))
+                                        .onChange(of: appLockEnabled) { oldValue, newValue in
+                                            if newValue {
+                                                // When enabling, test authentication immediately
+                                                Task {
+                                                    await testAuthentication()
+                                                }
+                                            }
+                                        }
                                 }
 
                                 // Language Selection
@@ -92,6 +101,11 @@ struct SettingsView: View {
             }
             .navigationBarHidden(true)
         }
+    }
+
+    private func testAuthentication() async {
+        // Test if authentication works by prompting immediately
+        await AppLock.shared.authenticate()
     }
 }
 

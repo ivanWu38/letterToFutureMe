@@ -58,5 +58,7 @@
 	</array>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3940256099942544~1458002511</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>We need to use Face ID to protect your private letters and keep them secure.</string>
 </dict>
 </plist>

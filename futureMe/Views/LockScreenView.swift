@@ -3,6 +3,7 @@ import SwiftUI
 struct LockScreenView: View {
     @ObservedObject private var appLock = AppLock.shared
     @ObservedObject private var languageManager = LanguageManager.shared
+    @State private var hasTriggeredAuth = false
 
     var body: some View {
         ZStack {
@@ -61,6 +62,17 @@ struct LockScreenView: View {
                 }
                 .padding(.horizontal, 40)
                 .padding(.bottom, 60)
+            }
+        }
+        .onAppear {
+            // Automatically trigger authentication when lock screen appears
+            if !hasTriggeredAuth {
+                hasTriggeredAuth = true
+                Task {
+                    // Small delay to ensure UI is ready
+                    try? await Task.sleep(nanoseconds: 500_000_000) // 0.5 seconds
+                    await appLock.authenticate()
+                }
             }
         }
     }
