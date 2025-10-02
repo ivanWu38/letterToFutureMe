@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Postvak IN";
+"tab.home" = "Home";
+"tab.settings" = "Instellingen";
+
+/* Home Screen */
+"home.title" = "Brief aan toekomstige ik";
+"home.send_letter" = "Stuur een brief";
+
+/* Inbox */
+"inbox.title" = "Postvak IN";
+"inbox.empty.title" = "Nog geen brieven";
+"inbox.empty.description" = "Je toekomstige brieven verschijnen hier wanneer de bezorgtijd aanbreekt.";
+"inbox.no_title" = "(Geen titel)";
+
+/* Compose Letter */
+"compose.title" = "Schrijf een brief";
+"compose.section.title" = "Titel";
+"compose.section.message" = "Bericht";
+"compose.section.delivery_time" = "Bezorgtijd";
+"compose.section.photos" = "Foto's (optioneel)";
+"compose.title_placeholder" = "Optionele titel";
+"compose.deliver_at" = "Bezorgen op";
+"compose.photo1" = "Foto 1";
+"compose.photo2" = "Foto 2";
+"compose.button.cancel" = "Annuleren";
+"compose.button.schedule" = "Plannen";
+"compose.error.invalid_date" = "Ongeldige datum geselecteerd.";
+"compose.alert.error" = "Fout";
+"compose.button.ok" = "OK";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "Brief verzonden!";
+"confirmation.message" = "Je brief is verzonden naar je toekomstige ik en wordt bezorgd op het geplande tijdstip.";
+"confirmation.button.continue" = "Doorgaan";
+
+/* Letter Detail */
+"letter.title" = "Brief";
+"letter.untitled" = "Brief";
+"letter.button.close" = "Sluiten";
+"letter.button.delete" = "Verwijderen";
+"letter.button.reschedule" = "Opnieuw plannen";
+
+/* Photo Picker */
+"photo.choose" = "Kies foto";
+"photo.remove" = "Verwijderen";
+
+/* Settings */
+"settings.title" = "Instellingen";
+"settings.section.basic" = "Basis";
+"settings.section.language" = "Taal";
+"settings.section.about" = "Over deze app";
+"settings.app_lock" = "Wachtwoordvergrendeling (Face ID)";
+"settings.language" = "Taal";
+
+/* App Lock */
+"applock.reason" = "Gebruik Face ID of toegangscode om toegang te krijgen tot je brieven";
+"applock.title" = "App vergrendeld";
+"applock.message" = "Gebruik Face ID of je apparaat toegangscode om de app te ontgrendelen";
+"applock.unlock" = "Ontgrendelen met Face ID";
+"settings.version" = "Versie";
+
+/* Notifications */
+"notification.title" = "Brief aan toekomstig jou";
+"notification.body_default" = "Je toekomstige brief is aangekomen.";
+"notification.body_with_title" = "Je brief '%@' is aangekomen!";
+"notification.subtitle" = "Bezorgd op %@";
+"notification.action.open" = "Openen";
+
+/* App Lock */
+"applock.reason" = "Ontgrendelen om je brieven te bekijken";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

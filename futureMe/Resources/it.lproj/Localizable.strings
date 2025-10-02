@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Posta in arrivo";
+"tab.home" = "Home";
+"tab.settings" = "Impostazioni";
+
+/* Home Screen */
+"home.title" = "Lettera al me futuro";
+"home.send_letter" = "Invia una lettera";
+
+/* Inbox */
+"inbox.title" = "Posta in arrivo";
+"inbox.empty.title" = "Ancora nessuna lettera";
+"inbox.empty.description" = "Le tue lettere future appariranno qui quando arriverà il momento della consegna.";
+"inbox.no_title" = "(Nessun titolo)";
+
+/* Compose Letter */
+"compose.title" = "Scrivi una lettera";
+"compose.section.title" = "Titolo";
+"compose.section.message" = "Messaggio";
+"compose.section.delivery_time" = "Ora di consegna";
+"compose.section.photos" = "Foto (opzionale)";
+"compose.title_placeholder" = "Titolo opzionale";
+"compose.deliver_at" = "Consegna il";
+"compose.photo1" = "Foto 1";
+"compose.photo2" = "Foto 2";
+"compose.button.cancel" = "Annulla";
+"compose.button.schedule" = "Programma";
+"compose.error.invalid_date" = "Data selezionata non valida.";
+"compose.alert.error" = "Errore";
+"compose.button.ok" = "OK";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "Lettera inviata!";
+"confirmation.message" = "La tua lettera è stata inviata al tuo futuro io e sarà consegnata all'ora programmata.";
+"confirmation.button.continue" = "Continua";
+
+/* Letter Detail */
+"letter.title" = "Lettera";
+"letter.untitled" = "Lettera";
+"letter.button.close" = "Chiudi";
+"letter.button.delete" = "Elimina";
+"letter.button.reschedule" = "Riprogramma";
+
+/* Photo Picker */
+"photo.choose" = "Scegli foto";
+"photo.remove" = "Rimuovi";
+
+/* Settings */
+"settings.title" = "Impostazioni";
+"settings.section.basic" = "Base";
+"settings.section.language" = "Lingua";
+"settings.section.about" = "Informazioni sull'app";
+"settings.app_lock" = "Blocco con password (Face ID)";
+"settings.language" = "Lingua";
+
+/* App Lock */
+"applock.reason" = "Usa Face ID o il codice di accesso per accedere alle tue lettere";
+"applock.title" = "App bloccata";
+"applock.message" = "Usa Face ID o il codice del dispositivo per sbloccare l'app";
+"applock.unlock" = "Sblocca con Face ID";
+"settings.version" = "Versione";
+
+/* Notifications */
+"notification.title" = "Lettera al futuro te";
+"notification.body_default" = "La tua lettera futura è arrivata.";
+"notification.body_with_title" = "La tua lettera '%@' è arrivata!";
+"notification.subtitle" = "Consegnata il %@";
+"notification.action.open" = "Apri";
+
+/* App Lock */
+"applock.reason" = "Sblocca per visualizzare le tue lettere";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

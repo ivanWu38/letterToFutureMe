@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Вхідні";
+"tab.home" = "Головна";
+"tab.settings" = "Налаштування";
+
+/* Home Screen */
+"home.title" = "Лист майбутньому собі";
+"home.send_letter" = "Надіслати лист";
+
+/* Inbox */
+"inbox.title" = "Вхідні";
+"inbox.empty.title" = "Поки що немає листів";
+"inbox.empty.description" = "Ваші майбутні листи з'являться тут, коли настане час доставки.";
+"inbox.no_title" = "(Без назви)";
+
+/* Compose Letter */
+"compose.title" = "Написати лист";
+"compose.section.title" = "Назва";
+"compose.section.message" = "Повідомлення";
+"compose.section.delivery_time" = "Час доставки";
+"compose.section.photos" = "Фотографії (необов'язково)";
+"compose.title_placeholder" = "Необов'язкова назва";
+"compose.deliver_at" = "Доставити";
+"compose.photo1" = "Фото 1";
+"compose.photo2" = "Фото 2";
+"compose.button.cancel" = "Скасувати";
+"compose.button.schedule" = "Запланувати";
+"compose.error.invalid_date" = "Вибрано недійсну дату.";
+"compose.alert.error" = "Помилка";
+"compose.button.ok" = "Гаразд";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "Лист надіслано!";
+"confirmation.message" = "Ваш лист було надіслано вашому майбутньому собі і буде доставлено в заплановану годину.";
+"confirmation.button.continue" = "Продовжити";
+
+/* Letter Detail */
+"letter.title" = "Лист";
+"letter.untitled" = "Лист";
+"letter.button.close" = "Закрити";
+"letter.button.delete" = "Видалити";
+"letter.button.reschedule" = "Перепланувати";
+
+/* Photo Picker */
+"photo.choose" = "Вибрати фото";
+"photo.remove" = "Видалити";
+
+/* Settings */
+"settings.title" = "Налаштування";
+"settings.section.basic" = "Основні";
+"settings.section.language" = "Мова";
+"settings.section.about" = "Про додаток";
+"settings.app_lock" = "Блокування паролем (Face ID)";
+"settings.language" = "Мова";
+
+/* App Lock */
+"applock.reason" = "Використовуйте Face ID або пароль для доступу до листів";
+"applock.title" = "Додаток заблоковано";
+"applock.message" = "Використовуйте Face ID або пароль пристрою для розблокування додатка";
+"applock.unlock" = "Розблокувати за допомогою Face ID";
+"settings.version" = "Версія";
+
+/* Notifications */
+"notification.title" = "Лист майбутньому вам";
+"notification.body_default" = "Ваш майбутній лист прибув.";
+"notification.body_with_title" = "Ваш лист '%@' прибув!";
+"notification.subtitle" = "Доставлено %@";
+"notification.action.open" = "Відкрити";
+
+/* App Lock */
+"applock.reason" = "Розблокуйте, щоб побачити ваші листи";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

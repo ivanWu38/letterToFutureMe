@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Gelen Kutusu";
+"tab.home" = "Ana Sayfa";
+"tab.settings" = "Ayarlar";
+
+/* Home Screen */
+"home.title" = "Gelecekteki bana mektup";
+"home.send_letter" = "Mektup gönder";
+
+/* Inbox */
+"inbox.title" = "Gelen Kutusu";
+"inbox.empty.title" = "Henüz mektup yok";
+"inbox.empty.description" = "Gelecekteki mektuplarınız, teslim zamanı geldiğinde burada görünecek.";
+"inbox.no_title" = "(Başlık yok)";
+
+/* Compose Letter */
+"compose.title" = "Mektup yaz";
+"compose.section.title" = "Başlık";
+"compose.section.message" = "Mesaj";
+"compose.section.delivery_time" = "Teslimat zamanı";
+"compose.section.photos" = "Fotoğraflar (isteğe bağlı)";
+"compose.title_placeholder" = "İsteğe bağlı başlık";
+"compose.deliver_at" = "Teslim zamanı";
+"compose.photo1" = "Fotoğraf 1";
+"compose.photo2" = "Fotoğraf 2";
+"compose.button.cancel" = "İptal";
+"compose.button.schedule" = "Zamanla";
+"compose.error.invalid_date" = "Geçersiz tarih seçildi.";
+"compose.alert.error" = "Hata";
+"compose.button.ok" = "Tamam";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "Mektup gönderildi!";
+"confirmation.message" = "Mektubunuz gelecekteki kendinize gönderildi ve planlanan zamanda teslim edilecek.";
+"confirmation.button.continue" = "Devam";
+
+/* Letter Detail */
+"letter.title" = "Mektup";
+"letter.untitled" = "Mektup";
+"letter.button.close" = "Kapat";
+"letter.button.delete" = "Sil";
+"letter.button.reschedule" = "Yeniden zamanla";
+
+/* Photo Picker */
+"photo.choose" = "Fotoğraf seç";
+"photo.remove" = "Kaldır";
+
+/* Settings */
+"settings.title" = "Ayarlar";
+"settings.section.basic" = "Temel";
+"settings.section.language" = "Dil";
+"settings.section.about" = "Uygulama hakkında";
+"settings.app_lock" = "Şifre kilidi (Face ID)";
+"settings.language" = "Dil";
+
+/* App Lock */
+"applock.reason" = "Mektuplarınıza erişmek için Face ID veya şifre kullanın";
+"applock.title" = "Uygulama kilitli";
+"applock.message" = "Uygulamanın kilidini açmak için Face ID veya cihaz şifrenizi kullanın";
+"applock.unlock" = "Face ID ile kilidi aç";
+"settings.version" = "Sürüm";
+
+/* Notifications */
+"notification.title" = "Gelecekteki sana mektup";
+"notification.body_default" = "Gelecekteki mektubunuz geldi.";
+"notification.body_with_title" = "'%@' mektubunuz geldi!";
+"notification.subtitle" = "%@ tarihinde teslim edildi";
+"notification.action.open" = "Aç";
+
+/* App Lock */
+"applock.reason" = "Mektuplarınızı görmek için kilidi açın";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

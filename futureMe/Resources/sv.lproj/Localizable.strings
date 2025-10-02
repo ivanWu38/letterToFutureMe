@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Inkorg";
+"tab.home" = "Hem";
+"tab.settings" = "Inställningar";
+
+/* Home Screen */
+"home.title" = "Brev till framtida mig";
+"home.send_letter" = "Skicka ett brev";
+
+/* Inbox */
+"inbox.title" = "Inkorg";
+"inbox.empty.title" = "Inga brev än";
+"inbox.empty.description" = "Dina framtida brev kommer att visas här när leveranstiden kommer.";
+"inbox.no_title" = "(Ingen titel)";
+
+/* Compose Letter */
+"compose.title" = "Skriv ett brev";
+"compose.section.title" = "Titel";
+"compose.section.message" = "Meddelande";
+"compose.section.delivery_time" = "Leveranstid";
+"compose.section.photos" = "Foton (valfritt)";
+"compose.title_placeholder" = "Valfri titel";
+"compose.deliver_at" = "Leverera";
+"compose.photo1" = "Foto 1";
+"compose.photo2" = "Foto 2";
+"compose.button.cancel" = "Avbryt";
+"compose.button.schedule" = "Schemalägg";
+"compose.error.invalid_date" = "Ogiltigt datum valt.";
+"compose.alert.error" = "Fel";
+"compose.button.ok" = "OK";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "Brev skickat!";
+"confirmation.message" = "Ditt brev har skickats till ditt framtida jag och kommer att levereras vid schemalagd tid.";
+"confirmation.button.continue" = "Fortsätt";
+
+/* Letter Detail */
+"letter.title" = "Brev";
+"letter.untitled" = "Brev";
+"letter.button.close" = "Stäng";
+"letter.button.delete" = "Radera";
+"letter.button.reschedule" = "Schemalägg om";
+
+/* Photo Picker */
+"photo.choose" = "Välj foto";
+"photo.remove" = "Ta bort";
+
+/* Settings */
+"settings.title" = "Inställningar";
+"settings.section.basic" = "Grundläggande";
+"settings.section.language" = "Språk";
+"settings.section.about" = "Om appen";
+"settings.app_lock" = "Lösenordslås (Face ID)";
+"settings.language" = "Språk";
+
+/* App Lock */
+"applock.reason" = "Använd Face ID eller lösenord för att komma åt dina brev";
+"applock.title" = "Appen är låst";
+"applock.message" = "Använd Face ID eller enhetens lösenord för att låsa upp appen";
+"applock.unlock" = "Lås upp med Face ID";
+"settings.version" = "Version";
+
+/* Notifications */
+"notification.title" = "Brev till framtida dig";
+"notification.body_default" = "Ditt framtida brev har anlänt.";
+"notification.body_with_title" = "Ditt brev '%@' har anlänt!";
+"notification.subtitle" = "Levererat %@";
+"notification.action.open" = "Öppna";
+
+/* App Lock */
+"applock.reason" = "Lås upp för att se dina brev";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

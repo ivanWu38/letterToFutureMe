@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Bandeja de entrada";
+"tab.home" = "Inicio";
+"tab.settings" = "Ajustes";
+
+/* Home Screen */
+"home.title" = "Carta a mi yo futuro";
+"home.send_letter" = "Enviar una carta";
+
+/* Inbox */
+"inbox.title" = "Bandeja de entrada";
+"inbox.empty.title" = "Aún no hay cartas";
+"inbox.empty.description" = "Tus cartas futuras aparecerán aquí cuando llegue su hora de entrega.";
+"inbox.no_title" = "(Sin título)";
+
+/* Compose Letter */
+"compose.title" = "Escribir una carta";
+"compose.section.title" = "Título";
+"compose.section.message" = "Mensaje";
+"compose.section.delivery_time" = "Hora de entrega";
+"compose.section.photos" = "Fotos (opcional)";
+"compose.title_placeholder" = "Título opcional";
+"compose.deliver_at" = "Entregar el";
+"compose.photo1" = "Foto 1";
+"compose.photo2" = "Foto 2";
+"compose.button.cancel" = "Cancelar";
+"compose.button.schedule" = "Programar";
+"compose.error.invalid_date" = "Fecha no válida.";
+"compose.alert.error" = "Error";
+"compose.button.ok" = "Aceptar";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "¡Carta enviada!";
+"confirmation.message" = "Tu carta ha sido enviada a tu yo futuro y será entregada en el momento programado.";
+"confirmation.button.continue" = "Continuar";
+
+/* Letter Detail */
+"letter.title" = "Carta";
+"letter.untitled" = "Carta";
+"letter.button.close" = "Cerrar";
+"letter.button.delete" = "Eliminar";
+"letter.button.reschedule" = "Reprogramar";
+
+/* Photo Picker */
+"photo.choose" = "Elegir foto";
+"photo.remove" = "Eliminar";
+
+/* Settings */
+"settings.title" = "Ajustes";
+"settings.section.basic" = "Básico";
+"settings.section.language" = "Idioma";
+"settings.section.about" = "Acerca de la app";
+"settings.app_lock" = "Bloqueo con contraseña (Face ID)";
+"settings.language" = "Idioma";
+
+/* App Lock */
+"applock.reason" = "Usa Face ID o la contraseña para acceder a tus cartas";
+"applock.title" = "App bloqueada";
+"applock.message" = "Usa Face ID o la contraseña de tu dispositivo para desbloquear la app";
+"applock.unlock" = "Desbloquear con Face ID";
+"settings.version" = "Versión";
+
+/* Notifications */
+"notification.title" = "Carta a tu yo futuro";
+"notification.body_default" = "Tu carta futura ha llegado.";
+"notification.body_with_title" = "¡Tu carta '%@' ha llegado!";
+"notification.subtitle" = "Entregada el %@";
+"notification.action.open" = "Abrir";
+
+/* App Lock */
+"applock.reason" = "Desbloquea para ver tus cartas";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

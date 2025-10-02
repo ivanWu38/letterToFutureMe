@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Saapuneet";
+"tab.home" = "Koti";
+"tab.settings" = "Asetukset";
+
+/* Home Screen */
+"home.title" = "Kirje tulevaisuuden minulle";
+"home.send_letter" = "Lähetä kirje";
+
+/* Inbox */
+"inbox.title" = "Saapuneet";
+"inbox.empty.title" = "Ei vielä kirjeitä";
+"inbox.empty.description" = "Tulevat kirjeesi näkyvät täällä, kun niiden toimitusaika saapuu.";
+"inbox.no_title" = "(Ei otsikkoa)";
+
+/* Compose Letter */
+"compose.title" = "Kirjoita kirje";
+"compose.section.title" = "Otsikko";
+"compose.section.message" = "Viesti";
+"compose.section.delivery_time" = "Toimitusaika";
+"compose.section.photos" = "Kuvat (valinnainen)";
+"compose.title_placeholder" = "Valinnainen otsikko";
+"compose.deliver_at" = "Toimita";
+"compose.photo1" = "Kuva 1";
+"compose.photo2" = "Kuva 2";
+"compose.button.cancel" = "Peruuta";
+"compose.button.schedule" = "Ajoita";
+"compose.error.invalid_date" = "Virheellinen päivämäärä.";
+"compose.alert.error" = "Virhe";
+"compose.button.ok" = "OK";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "Kirje lähetetty!";
+"confirmation.message" = "Kirjeesi on lähetetty tulevaisuuden sinulle ja se toimitetaan ajoitettuna aikana.";
+"confirmation.button.continue" = "Jatka";
+
+/* Letter Detail */
+"letter.title" = "Kirje";
+"letter.untitled" = "Kirje";
+"letter.button.close" = "Sulje";
+"letter.button.delete" = "Poista";
+"letter.button.reschedule" = "Ajoita uudelleen";
+
+/* Photo Picker */
+"photo.choose" = "Valitse kuva";
+"photo.remove" = "Poista";
+
+/* Settings */
+"settings.title" = "Asetukset";
+"settings.section.basic" = "Perus";
+"settings.section.language" = "Kieli";
+"settings.section.about" = "Tietoja sovelluksesta";
+"settings.app_lock" = "Salasanalukko (Face ID)";
+"settings.language" = "Kieli";
+
+/* App Lock */
+"applock.reason" = "Käytä Face ID:tä tai salasanaa päästäksesi kirjeisiisi";
+"applock.title" = "Sovellus lukittu";
+"applock.message" = "Käytä Face ID:tä tai laitteesi salasanaa avataksesi sovelluksen";
+"applock.unlock" = "Avaa Face ID:llä";
+"settings.version" = "Versio";
+
+/* Notifications */
+"notification.title" = "Kirje tulevaisuuden sinulle";
+"notification.body_default" = "Tulevaisuuden kirjeesi on saapunut.";
+"notification.body_with_title" = "Kirjeesi '%@' on saapunut!";
+"notification.subtitle" = "Toimitettu %@";
+"notification.action.open" = "Avaa";
+
+/* App Lock */
+"applock.reason" = "Avaa nähdäksesi kirjeesi";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

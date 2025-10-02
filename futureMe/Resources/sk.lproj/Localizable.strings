@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Doručené";
+"tab.home" = "Domov";
+"tab.settings" = "Nastavenia";
+
+/* Home Screen */
+"home.title" = "List budúcemu mne";
+"home.send_letter" = "Odoslať list";
+
+/* Inbox */
+"inbox.title" = "Doručené";
+"inbox.empty.title" = "Zatiaľ žiadne listy";
+"inbox.empty.description" = "Vaše budúce listy sa tu objavia, keď príde čas doručenia.";
+"inbox.no_title" = "(Bez názvu)";
+
+/* Compose Letter */
+"compose.title" = "Napísať list";
+"compose.section.title" = "Názov";
+"compose.section.message" = "Správa";
+"compose.section.delivery_time" = "Čas doručenia";
+"compose.section.photos" = "Fotografie (voliteľné)";
+"compose.title_placeholder" = "Voliteľný názov";
+"compose.deliver_at" = "Doručiť";
+"compose.photo1" = "Fotografia 1";
+"compose.photo2" = "Fotografia 2";
+"compose.button.cancel" = "Zrušiť";
+"compose.button.schedule" = "Naplánovať";
+"compose.error.invalid_date" = "Vybratý neplatný dátum.";
+"compose.alert.error" = "Chyba";
+"compose.button.ok" = "OK";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "List odoslaný!";
+"confirmation.message" = "Váš list bol odoslaný vášmu budúcemu ja a bude doručený v naplánovanom čase.";
+"confirmation.button.continue" = "Pokračovať";
+
+/* Letter Detail */
+"letter.title" = "List";
+"letter.untitled" = "List";
+"letter.button.close" = "Zavrieť";
+"letter.button.delete" = "Vymazať";
+"letter.button.reschedule" = "Preplánovať";
+
+/* Photo Picker */
+"photo.choose" = "Vybrať fotografiu";
+"photo.remove" = "Odstrániť";
+
+/* Settings */
+"settings.title" = "Nastavenia";
+"settings.section.basic" = "Základné";
+"settings.section.language" = "Jazyk";
+"settings.section.about" = "O aplikácii";
+"settings.app_lock" = "Zámok heslom (Face ID)";
+"settings.language" = "Jazyk";
+
+/* App Lock */
+"applock.reason" = "Použite Face ID alebo heslo na prístup k listom";
+"applock.title" = "Aplikácia zamknutá";
+"applock.message" = "Použite Face ID alebo heslo zariadenia na odomknutie aplikácie";
+"applock.unlock" = "Odomknúť pomocou Face ID";
+"settings.version" = "Verzia";
+
+/* Notifications */
+"notification.title" = "List budúcemu vám";
+"notification.body_default" = "Váš budúci list prišiel.";
+"notification.body_with_title" = "Váš list '%@' prišiel!";
+"notification.subtitle" = "Doručené %@";
+"notification.action.open" = "Otvoriť";
+
+/* App Lock */
+"applock.reason" = "Odomknite pre zobrazenie vašich listov";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

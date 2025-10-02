@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Peti Masuk";
+"tab.home" = "Laman Utama";
+"tab.settings" = "Tetapan";
+
+/* Home Screen */
+"home.title" = "Surat kepada diri masa depan";
+"home.send_letter" = "Hantar Surat";
+
+/* Inbox */
+"inbox.title" = "Peti Masuk";
+"inbox.empty.title" = "Tiada Surat Lagi";
+"inbox.empty.description" = "Surat masa depan anda akan muncul di sini apabila masa penghantaran tiba.";
+"inbox.no_title" = "(Tiada Tajuk)";
+
+/* Compose Letter */
+"compose.title" = "Tulis Surat";
+"compose.section.title" = "Tajuk";
+"compose.section.message" = "Mesej";
+"compose.section.delivery_time" = "Masa penghantaran";
+"compose.section.photos" = "Foto (pilihan)";
+"compose.title_placeholder" = "Tajuk pilihan";
+"compose.deliver_at" = "Hantar pada";
+"compose.photo1" = "Foto 1";
+"compose.photo2" = "Foto 2";
+"compose.button.cancel" = "Batal";
+"compose.button.schedule" = "Jadualkan";
+"compose.error.invalid_date" = "Tarikh yang dipilih tidak sah.";
+"compose.alert.error" = "Ralat";
+"compose.button.ok" = "OK";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "Surat Dihantar!";
+"confirmation.message" = "Surat anda telah dihantar kepada diri masa depan anda dan akan disampaikan pada masa yang dijadualkan.";
+"confirmation.button.continue" = "Teruskan";
+
+/* Letter Detail */
+"letter.title" = "Surat";
+"letter.untitled" = "Surat";
+"letter.button.close" = "Tutup";
+"letter.button.delete" = "Padam";
+"letter.button.reschedule" = "Jadualkan Semula";
+
+/* Photo Picker */
+"photo.choose" = "Pilih Foto";
+"photo.remove" = "Buang";
+
+/* Settings */
+"settings.title" = "Tetapan";
+"settings.section.basic" = "Asas";
+"settings.section.language" = "Bahasa";
+"settings.section.about" = "Perihal aplikasi ini";
+"settings.app_lock" = "Kunci Kata Laluan (Face ID)";
+"settings.language" = "Bahasa";
+
+/* App Lock */
+"applock.reason" = "Gunakan Face ID atau kod laluan untuk mengakses surat anda";
+"applock.title" = "Aplikasi Dikunci";
+"applock.message" = "Gunakan Face ID atau kod laluan peranti anda untuk membuka kunci aplikasi";
+"applock.unlock" = "Buka Kunci dengan Face ID";
+"settings.version" = "Versi";
+
+/* Notifications */
+"notification.title" = "Surat kepada Diri Masa Depan Anda";
+"notification.body_default" = "Surat masa depan anda telah tiba.";
+"notification.body_with_title" = "Surat anda '%@' telah tiba!";
+"notification.subtitle" = "Dihantar pada %@";
+"notification.action.open" = "Buka";
+
+/* App Lock */
+"applock.reason" = "Buka kunci untuk melihat surat anda";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

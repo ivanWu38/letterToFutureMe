@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "กล่องจดหมาย";
+"tab.home" = "หน้าหลัก";
+"tab.settings" = "การตั้งค่า";
+
+/* Home Screen */
+"home.title" = "จดหมายถึงตัวเองในอนาคต";
+"home.send_letter" = "ส่งจดหมาย";
+
+/* Inbox */
+"inbox.title" = "กล่องจดหมาย";
+"inbox.empty.title" = "ยังไม่มีจดหมาย";
+"inbox.empty.description" = "จดหมายในอนาคตของคุณจะปรากฏที่นี่เมื่อถึงเวลาส่งมอบ";
+"inbox.no_title" = "(ไม่มีหัวข้อ)";
+
+/* Compose Letter */
+"compose.title" = "เขียนจดหมาย";
+"compose.section.title" = "หัวข้อ";
+"compose.section.message" = "ข้อความ";
+"compose.section.delivery_time" = "เวลาส่งมอบ";
+"compose.section.photos" = "รูปภาพ (ไม่บังคับ)";
+"compose.title_placeholder" = "หัวข้อ (ไม่บังคับ)";
+"compose.deliver_at" = "ส่งมอบเมื่อ";
+"compose.photo1" = "รูปภาพที่ 1";
+"compose.photo2" = "รูปภาพที่ 2";
+"compose.button.cancel" = "ยกเลิก";
+"compose.button.schedule" = "กำหนดเวลา";
+"compose.error.invalid_date" = "เลือกวันที่ไม่ถูกต้อง";
+"compose.alert.error" = "ข้อผิดพลาด";
+"compose.button.ok" = "ตกลง";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "ส่งจดหมายแล้ว!";
+"confirmation.message" = "จดหมายของคุณถูกส่งไปยังตัวเองในอนาคตและจะถูกส่งมอบในเวลาที่กำหนด";
+"confirmation.button.continue" = "ดำเนินการต่อ";
+
+/* Letter Detail */
+"letter.title" = "จดหมาย";
+"letter.untitled" = "จดหมาย";
+"letter.button.close" = "ปิด";
+"letter.button.delete" = "ลบ";
+"letter.button.reschedule" = "กำหนดเวลาใหม่";
+
+/* Photo Picker */
+"photo.choose" = "เลือกรูปภาพ";
+"photo.remove" = "ลบออก";
+
+/* Settings */
+"settings.title" = "การตั้งค่า";
+"settings.section.basic" = "พื้นฐาน";
+"settings.section.language" = "ภาษา";
+"settings.section.about" = "เกี่ยวกับแอปนี้";
+"settings.app_lock" = "ล็อครหัสผ่าน (Face ID)";
+"settings.language" = "ภาษา";
+
+/* App Lock */
+"applock.reason" = "ใช้ Face ID หรือรหัสผ่านเพื่อเข้าถึงจดหมายของคุณ";
+"applock.title" = "แอปถูกล็อก";
+"applock.message" = "ใช้ Face ID หรือรหัสผ่านของอุปกรณ์เพื่อปลดล็อกแอป";
+"applock.unlock" = "ปลดล็อกด้วย Face ID";
+"settings.version" = "เวอร์ชัน";
+
+/* Notifications */
+"notification.title" = "จดหมายถึงตัวคุณในอนาคต";
+"notification.body_default" = "จดหมายในอนาคตของคุณมาถึงแล้ว";
+"notification.body_with_title" = "จดหมาย '%@' ของคุณมาถึงแล้ว!";
+"notification.subtitle" = "ส่งมอบเมื่อ %@";
+"notification.action.open" = "เปิด";
+
+/* App Lock */
+"applock.reason" = "ปลดล็อกเพื่อดูจดหมายของคุณ";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

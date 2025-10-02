@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Posteingang";
+"tab.home" = "Start";
+"tab.settings" = "Einstellungen";
+
+/* Home Screen */
+"home.title" = "Brief an mein zukünftiges Ich";
+"home.send_letter" = "Brief senden";
+
+/* Inbox */
+"inbox.title" = "Posteingang";
+"inbox.empty.title" = "Noch keine Briefe";
+"inbox.empty.description" = "Ihre zukünftigen Briefe werden hier angezeigt, wenn ihre Zustellzeit erreicht ist.";
+"inbox.no_title" = "(Kein Titel)";
+
+/* Compose Letter */
+"compose.title" = "Brief schreiben";
+"compose.section.title" = "Titel";
+"compose.section.message" = "Nachricht";
+"compose.section.delivery_time" = "Zustellzeit";
+"compose.section.photos" = "Fotos (optional)";
+"compose.title_placeholder" = "Optionaler Titel";
+"compose.deliver_at" = "Zustellen am";
+"compose.photo1" = "Foto 1";
+"compose.photo2" = "Foto 2";
+"compose.button.cancel" = "Abbrechen";
+"compose.button.schedule" = "Planen";
+"compose.error.invalid_date" = "Ungültiges Datum ausgewählt.";
+"compose.alert.error" = "Fehler";
+"compose.button.ok" = "OK";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "Brief gesendet!";
+"confirmation.message" = "Ihr Brief wurde an Ihr zukünftiges Ich gesendet und wird zum geplanten Zeitpunkt zugestellt.";
+"confirmation.button.continue" = "Weiter";
+
+/* Letter Detail */
+"letter.title" = "Brief";
+"letter.untitled" = "Brief";
+"letter.button.close" = "Schließen";
+"letter.button.delete" = "Löschen";
+"letter.button.reschedule" = "Umplanen";
+
+/* Photo Picker */
+"photo.choose" = "Foto auswählen";
+"photo.remove" = "Entfernen";
+
+/* Settings */
+"settings.title" = "Einstellungen";
+"settings.section.basic" = "Allgemein";
+"settings.section.language" = "Sprache";
+"settings.section.about" = "Über diese App";
+"settings.app_lock" = "Passwortsperre (Face ID)";
+"settings.language" = "Sprache";
+
+/* App Lock */
+"applock.reason" = "Verwenden Sie Face ID oder einen Code, um auf Ihre Briefe zuzugreifen";
+"applock.title" = "App gesperrt";
+"applock.message" = "Verwenden Sie Face ID oder Ihren Gerätecode, um die App zu entsperren";
+"applock.unlock" = "Mit Face ID entsperren";
+"settings.version" = "Version";
+
+/* Notifications */
+"notification.title" = "Brief an Ihr zukünftiges Ich";
+"notification.body_default" = "Ihr zukünftiger Brief ist angekommen.";
+"notification.body_with_title" = "Ihr Brief '%@' ist angekommen!";
+"notification.subtitle" = "Zugestellt am %@";
+"notification.action.open" = "Öffnen";
+
+/* App Lock */
+"applock.reason" = "Entsperren, um Ihre Briefe anzuzeigen";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

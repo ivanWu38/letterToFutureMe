@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Doručená pošta";
+"tab.home" = "Domů";
+"tab.settings" = "Nastavení";
+
+/* Home Screen */
+"home.title" = "Dopis budoucímu já";
+"home.send_letter" = "Odeslat dopis";
+
+/* Inbox */
+"inbox.title" = "Doručená pošta";
+"inbox.empty.title" = "Zatím žádné dopisy";
+"inbox.empty.description" = "Vaše budoucí dopisy se zde zobrazí, až nadejde čas jejich doručení.";
+"inbox.no_title" = "(Bez názvu)";
+
+/* Compose Letter */
+"compose.title" = "Napsat dopis";
+"compose.section.title" = "Název";
+"compose.section.message" = "Zpráva";
+"compose.section.delivery_time" = "Čas doručení";
+"compose.section.photos" = "Fotografie (volitelné)";
+"compose.title_placeholder" = "Volitelný název";
+"compose.deliver_at" = "Doručit v";
+"compose.photo1" = "Fotografie 1";
+"compose.photo2" = "Fotografie 2";
+"compose.button.cancel" = "Zrušit";
+"compose.button.schedule" = "Naplánovat";
+"compose.error.invalid_date" = "Neplatné datum.";
+"compose.alert.error" = "Chyba";
+"compose.button.ok" = "OK";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "Dopis odeslán!";
+"confirmation.message" = "Váš dopis byl odeslán vašemu budoucímu já a bude doručen v naplánovaný čas.";
+"confirmation.button.continue" = "Pokračovat";
+
+/* Letter Detail */
+"letter.title" = "Dopis";
+"letter.untitled" = "Dopis";
+"letter.button.close" = "Zavřít";
+"letter.button.delete" = "Smazat";
+"letter.button.reschedule" = "Přeplánovat";
+
+/* Photo Picker */
+"photo.choose" = "Vybrat fotografii";
+"photo.remove" = "Odstranit";
+
+/* Settings */
+"settings.title" = "Nastavení";
+"settings.section.basic" = "Základní";
+"settings.section.language" = "Jazyk";
+"settings.section.about" = "O aplikaci";
+"settings.app_lock" = "Zámek heslem (Face ID)";
+"settings.language" = "Jazyk";
+
+/* App Lock */
+"applock.reason" = "Použijte Face ID nebo heslo pro přístup k vašim dopisům";
+"applock.title" = "Aplikace uzamčena";
+"applock.message" = "Použijte Face ID nebo heslo zařízení k odemčení aplikace";
+"applock.unlock" = "Odemknout pomocí Face ID";
+"settings.version" = "Verze";
+
+/* Notifications */
+"notification.title" = "Dopis budoucímu vám";
+"notification.body_default" = "Váš budoucí dopis dorazil.";
+"notification.body_with_title" = "Váš dopis '%@' dorazil!";
+"notification.subtitle" = "Doručeno dne %@";
+"notification.action.open" = "Otevřít";
+
+/* App Lock */
+"applock.reason" = "Odemkněte pro zobrazení vašich dopisů";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Beérkezett";
+"tab.home" = "Kezdőlap";
+"tab.settings" = "Beállítások";
+
+/* Home Screen */
+"home.title" = "Levél a jövőbeli énnek";
+"home.send_letter" = "Levél küldése";
+
+/* Inbox */
+"inbox.title" = "Beérkezett";
+"inbox.empty.title" = "Még nincsenek levelek";
+"inbox.empty.description" = "A jövőbeli leveleid akkor jelennek meg itt, amikor eléri őket a kézbesítési idő.";
+"inbox.no_title" = "(Nincs cím)";
+
+/* Compose Letter */
+"compose.title" = "Levél írása";
+"compose.section.title" = "Cím";
+"compose.section.message" = "Üzenet";
+"compose.section.delivery_time" = "Kézbesítési idő";
+"compose.section.photos" = "Fényképek (opcionális)";
+"compose.title_placeholder" = "Opcionális cím";
+"compose.deliver_at" = "Kézbesítés";
+"compose.photo1" = "Fénykép 1";
+"compose.photo2" = "Fénykép 2";
+"compose.button.cancel" = "Mégse";
+"compose.button.schedule" = "Ütemezés";
+"compose.error.invalid_date" = "Érvénytelen dátum lett kiválasztva.";
+"compose.alert.error" = "Hiba";
+"compose.button.ok" = "OK";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "Levél elküldve!";
+"confirmation.message" = "A leveled el lett küldve a jövőbeli énednek, és az ütemezett időben lesz kézbesítve.";
+"confirmation.button.continue" = "Folytatás";
+
+/* Letter Detail */
+"letter.title" = "Levél";
+"letter.untitled" = "Levél";
+"letter.button.close" = "Bezárás";
+"letter.button.delete" = "Törlés";
+"letter.button.reschedule" = "Újraütemezés";
+
+/* Photo Picker */
+"photo.choose" = "Fénykép választása";
+"photo.remove" = "Eltávolítás";
+
+/* Settings */
+"settings.title" = "Beállítások";
+"settings.section.basic" = "Alapvető";
+"settings.section.language" = "Nyelv";
+"settings.section.about" = "Az alkalmazásról";
+"settings.app_lock" = "Jelszavas zárolás (Face ID)";
+"settings.language" = "Nyelv";
+
+/* App Lock */
+"applock.reason" = "Használd a Face ID-t vagy jelkódot a leveleidhez való hozzáféréshez";
+"applock.title" = "Alkalmazás zárolva";
+"applock.message" = "Használd a Face ID-t vagy az eszköz jelkódját az alkalmazás feloldásához";
+"applock.unlock" = "Feloldás Face ID-vel";
+"settings.version" = "Verzió";
+
+/* Notifications */
+"notification.title" = "Levél a jövőbeli énednek";
+"notification.body_default" = "A jövőbeli leveled megérkezett.";
+"notification.body_with_title" = "A '%@' című leveled megérkezett!";
+"notification.subtitle" = "Kézbesítve: %@";
+"notification.action.open" = "Megnyitás";
+
+/* App Lock */
+"applock.reason" = "Feloldás a leveleid megtekintéséhez";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

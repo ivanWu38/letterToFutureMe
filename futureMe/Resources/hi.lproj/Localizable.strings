@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "इनबॉक्स";
+"tab.home" = "होम";
+"tab.settings" = "सेटिंग्स";
+
+/* Home Screen */
+"home.title" = "भविष्य के मुझे पत्र";
+"home.send_letter" = "पत्र भेजें";
+
+/* Inbox */
+"inbox.title" = "इनबॉक्स";
+"inbox.empty.title" = "अभी कोई पत्र नहीं";
+"inbox.empty.description" = "जब आपके पत्रों का डिलीवरी समय आएगा तो वे यहाँ दिखाई देंगे।";
+"inbox.no_title" = "(कोई शीर्षक नहीं)";
+
+/* Compose Letter */
+"compose.title" = "पत्र लिखें";
+"compose.section.title" = "शीर्षक";
+"compose.section.message" = "संदेश";
+"compose.section.delivery_time" = "डिलीवरी समय";
+"compose.section.photos" = "फोटो (वैकल्पिक)";
+"compose.title_placeholder" = "वैकल्पिक शीर्षक";
+"compose.deliver_at" = "डिलीवर करें";
+"compose.photo1" = "फोटो 1";
+"compose.photo2" = "फोटो 2";
+"compose.button.cancel" = "रद्द करें";
+"compose.button.schedule" = "शेड्यूल करें";
+"compose.error.invalid_date" = "अमान्य तिथि चुनी गई।";
+"compose.alert.error" = "त्रुटि";
+"compose.button.ok" = "ठीक है";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "पत्र भेज दिया गया!";
+"confirmation.message" = "आपका पत्र आपके भविष्य के स्वयं को भेज दिया गया है और निर्धारित समय पर डिलीवर किया जाएगा।";
+"confirmation.button.continue" = "जारी रखें";
+
+/* Letter Detail */
+"letter.title" = "पत्र";
+"letter.untitled" = "पत्र";
+"letter.button.close" = "बंद करें";
+"letter.button.delete" = "हटाएं";
+"letter.button.reschedule" = "पुनः शेड्यूल करें";
+
+/* Photo Picker */
+"photo.choose" = "फोटो चुनें";
+"photo.remove" = "हटाएं";
+
+/* Settings */
+"settings.title" = "सेटिंग्स";
+"settings.section.basic" = "बेसिक";
+"settings.section.language" = "भाषा";
+"settings.section.about" = "ऐप के बारे में";
+"settings.app_lock" = "पासवर्ड लॉक (Face ID)";
+"settings.language" = "भाषा";
+
+/* App Lock */
+"applock.reason" = "अपने पत्रों तक पहुंचने के लिए Face ID या पासकोड का उपयोग करें";
+"applock.title" = "ऐप लॉक है";
+"applock.message" = "ऐप अनलॉक करने के लिए Face ID या अपने डिवाइस पासकोड का उपयोग करें";
+"applock.unlock" = "Face ID से अनलॉक करें";
+"settings.version" = "संस्करण";
+
+/* Notifications */
+"notification.title" = "भविष्य के आपके लिए पत्र";
+"notification.body_default" = "आपका भविष्य का पत्र आ गया है।";
+"notification.body_with_title" = "आपका पत्र '%@' आ गया है!";
+"notification.subtitle" = "%@ को डिलीवर किया गया";
+"notification.action.open" = "खोलें";
+
+/* App Lock */
+"applock.reason" = "अपने पत्रों को देखने के लिए अनलॉक करें";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

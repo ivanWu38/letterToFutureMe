@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Hộp thư đến";
+"tab.home" = "Trang chủ";
+"tab.settings" = "Cài đặt";
+
+/* Home Screen */
+"home.title" = "Thư gửi tương lai của tôi";
+"home.send_letter" = "Gửi thư";
+
+/* Inbox */
+"inbox.title" = "Hộp thư đến";
+"inbox.empty.title" = "Chưa có thư";
+"inbox.empty.description" = "Các bức thư tương lai của bạn sẽ xuất hiện ở đây khi đến thời gian giao.";
+"inbox.no_title" = "(Không có tiêu đề)";
+
+/* Compose Letter */
+"compose.title" = "Viết thư";
+"compose.section.title" = "Tiêu đề";
+"compose.section.message" = "Nội dung";
+"compose.section.delivery_time" = "Thời gian giao";
+"compose.section.photos" = "Ảnh (tùy chọn)";
+"compose.title_placeholder" = "Tiêu đề tùy chọn";
+"compose.deliver_at" = "Giao vào";
+"compose.photo1" = "Ảnh 1";
+"compose.photo2" = "Ảnh 2";
+"compose.button.cancel" = "Hủy";
+"compose.button.schedule" = "Lên lịch";
+"compose.error.invalid_date" = "Đã chọn ngày không hợp lệ.";
+"compose.alert.error" = "Lỗi";
+"compose.button.ok" = "OK";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "Đã gửi thư!";
+"confirmation.message" = "Thư của bạn đã được gửi đến tương lai của bạn và sẽ được giao vào thời gian đã lên lịch.";
+"confirmation.button.continue" = "Tiếp tục";
+
+/* Letter Detail */
+"letter.title" = "Thư";
+"letter.untitled" = "Thư";
+"letter.button.close" = "Đóng";
+"letter.button.delete" = "Xóa";
+"letter.button.reschedule" = "Lên lịch lại";
+
+/* Photo Picker */
+"photo.choose" = "Chọn ảnh";
+"photo.remove" = "Xóa";
+
+/* Settings */
+"settings.title" = "Cài đặt";
+"settings.section.basic" = "Cơ bản";
+"settings.section.language" = "Ngôn ngữ";
+"settings.section.about" = "Về ứng dụng này";
+"settings.app_lock" = "Khóa mật khẩu (Face ID)";
+"settings.language" = "Ngôn ngữ";
+
+/* App Lock */
+"applock.reason" = "Sử dụng Face ID hoặc mật khẩu để truy cập thư của bạn";
+"applock.title" = "Ứng dụng đã khóa";
+"applock.message" = "Sử dụng Face ID hoặc mật khẩu thiết bị để mở khóa ứng dụng";
+"applock.unlock" = "Mở khóa bằng Face ID";
+"settings.version" = "Phiên bản";
+
+/* Notifications */
+"notification.title" = "Thư gửi tương lai của bạn";
+"notification.body_default" = "Thư tương lai của bạn đã đến.";
+"notification.body_with_title" = "Thư '%@' của bạn đã đến!";
+"notification.subtitle" = "Đã giao vào %@";
+"notification.action.open" = "Mở";
+
+/* App Lock */
+"applock.reason" = "Mở khóa để xem thư của bạn";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

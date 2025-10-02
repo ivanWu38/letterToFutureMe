@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Primite";
+"tab.home" = "Acasă";
+"tab.settings" = "Setări";
+
+/* Home Screen */
+"home.title" = "Scrisoare către viitorul meu";
+"home.send_letter" = "Trimite o scrisoare";
+
+/* Inbox */
+"inbox.title" = "Primite";
+"inbox.empty.title" = "Încă nu ai scrisori";
+"inbox.empty.description" = "Scrisorile tale viitoare vor apărea aici când va sosi momentul livrării.";
+"inbox.no_title" = "(Fără titlu)";
+
+/* Compose Letter */
+"compose.title" = "Scrie o scrisoare";
+"compose.section.title" = "Titlu";
+"compose.section.message" = "Mesaj";
+"compose.section.delivery_time" = "Ora livrării";
+"compose.section.photos" = "Fotografii (opțional)";
+"compose.title_placeholder" = "Titlu opțional";
+"compose.deliver_at" = "Livrează la";
+"compose.photo1" = "Fotografia 1";
+"compose.photo2" = "Fotografia 2";
+"compose.button.cancel" = "Anulează";
+"compose.button.schedule" = "Programează";
+"compose.error.invalid_date" = "Data selectată este invalidă.";
+"compose.alert.error" = "Eroare";
+"compose.button.ok" = "OK";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "Scrisoare trimisă!";
+"confirmation.message" = "Scrisoarea ta a fost trimisă către tine cel viitor și va fi livrată la ora programată.";
+"confirmation.button.continue" = "Continuă";
+
+/* Letter Detail */
+"letter.title" = "Scrisoare";
+"letter.untitled" = "Scrisoare";
+"letter.button.close" = "Închide";
+"letter.button.delete" = "Șterge";
+"letter.button.reschedule" = "Reprogramează";
+
+/* Photo Picker */
+"photo.choose" = "Alege fotografie";
+"photo.remove" = "Elimină";
+
+/* Settings */
+"settings.title" = "Setări";
+"settings.section.basic" = "De bază";
+"settings.section.language" = "Limbă";
+"settings.section.about" = "Despre aplicație";
+"settings.app_lock" = "Blocare cu parolă (Face ID)";
+"settings.language" = "Limbă";
+
+/* App Lock */
+"applock.reason" = "Folosește Face ID sau codul pentru a accesa scrisorile";
+"applock.title" = "Aplicație blocată";
+"applock.message" = "Folosește Face ID sau codul dispozitivului pentru a debloca aplicația";
+"applock.unlock" = "Deblochează cu Face ID";
+"settings.version" = "Versiune";
+
+/* Notifications */
+"notification.title" = "Scrisoare către viitorul tău";
+"notification.body_default" = "Scrisoarea ta viitoare a sosit.";
+"notification.body_with_title" = "Scrisoarea ta '%@' a sosit!";
+"notification.subtitle" = "Livrată pe %@";
+"notification.action.open" = "Deschide";
+
+/* App Lock */
+"applock.reason" = "Deblochează pentru a vedea scrisorile tale";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

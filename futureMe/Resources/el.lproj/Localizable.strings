@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Εισερχόμενα";
+"tab.home" = "Αρχική";
+"tab.settings" = "Ρυθμίσεις";
+
+/* Home Screen */
+"home.title" = "Γράμμα στον εαυτό μου του μέλλοντος";
+"home.send_letter" = "Αποστολή γράμματος";
+
+/* Inbox */
+"inbox.title" = "Εισερχόμενα";
+"inbox.empty.title" = "Δεν υπάρχουν γράμματα ακόμα";
+"inbox.empty.description" = "Τα μελλοντικά σας γράμματα θα εμφανιστούν εδώ όταν φτάσει ο χρόνος παράδοσής τους.";
+"inbox.no_title" = "(Χωρίς τίτλο)";
+
+/* Compose Letter */
+"compose.title" = "Γράψτε ένα γράμμα";
+"compose.section.title" = "Τίτλος";
+"compose.section.message" = "Μήνυμα";
+"compose.section.delivery_time" = "Χρόνος παράδοσης";
+"compose.section.photos" = "Φωτογραφίες (προαιρετικό)";
+"compose.title_placeholder" = "Προαιρετικός τίτλος";
+"compose.deliver_at" = "Παράδοση στις";
+"compose.photo1" = "Φωτογραφία 1";
+"compose.photo2" = "Φωτογραφία 2";
+"compose.button.cancel" = "Ακύρωση";
+"compose.button.schedule" = "Προγραμματισμός";
+"compose.error.invalid_date" = "Μη έγκυρη ημερομηνία.";
+"compose.alert.error" = "Σφάλμα";
+"compose.button.ok" = "OK";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "Το γράμμα στάλθηκε!";
+"confirmation.message" = "Το γράμμα σας στάλθηκε στον μελλοντικό σας εαυτό και θα παραδοθεί την προγραμματισμένη ώρα.";
+"confirmation.button.continue" = "Συνέχεια";
+
+/* Letter Detail */
+"letter.title" = "Γράμμα";
+"letter.untitled" = "Γράμμα";
+"letter.button.close" = "Κλείσιμο";
+"letter.button.delete" = "Διαγραφή";
+"letter.button.reschedule" = "Επαναπρογραμματισμός";
+
+/* Photo Picker */
+"photo.choose" = "Επιλογή φωτογραφίας";
+"photo.remove" = "Αφαίρεση";
+
+/* Settings */
+"settings.title" = "Ρυθμίσεις";
+"settings.section.basic" = "Βασικά";
+"settings.section.language" = "Γλώσσα";
+"settings.section.about" = "Σχετικά με την εφαρμογή";
+"settings.app_lock" = "Κλείδωμα με κωδικό (Face ID)";
+"settings.language" = "Γλώσσα";
+
+/* App Lock */
+"applock.reason" = "Χρησιμοποιήστε Face ID ή κωδικό πρόσβασης για πρόσβαση στα γράμματά σας";
+"applock.title" = "Η εφαρμογή είναι κλειδωμένη";
+"applock.message" = "Χρησιμοποιήστε Face ID ή τον κωδικό της συσκευής σας για να ξεκλειδώσετε την εφαρμογή";
+"applock.unlock" = "Ξεκλείδωμα με Face ID";
+"settings.version" = "Έκδοση";
+
+/* Notifications */
+"notification.title" = "Γράμμα στον μελλοντικό εαυτό σας";
+"notification.body_default" = "Το μελλοντικό σας γράμμα έφτασε.";
+"notification.body_with_title" = "Το γράμμα σας '%@' έφτασε!";
+"notification.subtitle" = "Παραδόθηκε στις %@";
+"notification.action.open" = "Άνοιγμα";
+
+/* App Lock */
+"applock.reason" = "Ξεκλειδώστε για να δείτε τα γράμματά σας";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

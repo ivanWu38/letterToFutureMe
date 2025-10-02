@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Pristigla pošta";
+"tab.home" = "Početna";
+"tab.settings" = "Postavke";
+
+/* Home Screen */
+"home.title" = "Pismo budućem meni";
+"home.send_letter" = "Pošalji pismo";
+
+/* Inbox */
+"inbox.title" = "Pristigla pošta";
+"inbox.empty.title" = "Još nema pisama";
+"inbox.empty.description" = "Vaša buduća pisma pojavit će se ovdje kada dođe vrijeme njihove dostave.";
+"inbox.no_title" = "(Bez naslova)";
+
+/* Compose Letter */
+"compose.title" = "Napiši pismo";
+"compose.section.title" = "Naslov";
+"compose.section.message" = "Poruka";
+"compose.section.delivery_time" = "Vrijeme dostave";
+"compose.section.photos" = "Fotografije (opcionalno)";
+"compose.title_placeholder" = "Opcionalni naslov";
+"compose.deliver_at" = "Dostavi u";
+"compose.photo1" = "Fotografija 1";
+"compose.photo2" = "Fotografija 2";
+"compose.button.cancel" = "Odustani";
+"compose.button.schedule" = "Zakaži";
+"compose.error.invalid_date" = "Odabran je nevažeći datum.";
+"compose.alert.error" = "Greška";
+"compose.button.ok" = "U redu";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "Pismo poslano!";
+"confirmation.message" = "Vaše pismo poslano je vašem budućem ja i bit će dostavljeno u zakazano vrijeme.";
+"confirmation.button.continue" = "Nastavi";
+
+/* Letter Detail */
+"letter.title" = "Pismo";
+"letter.untitled" = "Pismo";
+"letter.button.close" = "Zatvori";
+"letter.button.delete" = "Izbriši";
+"letter.button.reschedule" = "Ponovo zakaži";
+
+/* Photo Picker */
+"photo.choose" = "Odaberi fotografiju";
+"photo.remove" = "Ukloni";
+
+/* Settings */
+"settings.title" = "Postavke";
+"settings.section.basic" = "Osnovno";
+"settings.section.language" = "Jezik";
+"settings.section.about" = "O aplikaciji";
+"settings.app_lock" = "Zaključavanje lozinkom (Face ID)";
+"settings.language" = "Jezik";
+
+/* App Lock */
+"applock.reason" = "Koristite Face ID ili lozinku za pristup vašim pismima";
+"applock.title" = "Aplikacija zaključana";
+"applock.message" = "Koristite Face ID ili lozinku uređaja za otključavanje aplikacije";
+"applock.unlock" = "Otključaj s Face ID";
+"settings.version" = "Verzija";
+
+/* Notifications */
+"notification.title" = "Pismo budućem tebi";
+"notification.body_default" = "Vaše buduće pismo je stiglo.";
+"notification.body_with_title" = "Vaše pismo '%@' je stiglo!";
+"notification.subtitle" = "Dostavljeno %@";
+"notification.action.open" = "Otvori";
+
+/* App Lock */
+"applock.reason" = "Otključajte za pregled vaših pisama";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

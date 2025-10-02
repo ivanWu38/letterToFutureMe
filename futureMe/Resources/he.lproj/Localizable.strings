@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "תיבת דואר נכנס";
+"tab.home" = "בית";
+"tab.settings" = "הגדרות";
+
+/* Home Screen */
+"home.title" = "מכתב לעצמי העתידי";
+"home.send_letter" = "שלח מכתב";
+
+/* Inbox */
+"inbox.title" = "תיבת דואר נכנס";
+"inbox.empty.title" = "עדיין אין מכתבים";
+"inbox.empty.description" = "המכתבים העתידיים שלך יופיעו כאן כאשר יגיע זמן המסירה שלהם.";
+"inbox.no_title" = "(ללא כותרת)";
+
+/* Compose Letter */
+"compose.title" = "כתוב מכתב";
+"compose.section.title" = "כותרת";
+"compose.section.message" = "הודעה";
+"compose.section.delivery_time" = "זמן משלוח";
+"compose.section.photos" = "תמונות (אופציונלי)";
+"compose.title_placeholder" = "כותרת אופציונלית";
+"compose.deliver_at" = "שלח ב";
+"compose.photo1" = "תמונה 1";
+"compose.photo2" = "תמונה 2";
+"compose.button.cancel" = "ביטול";
+"compose.button.schedule" = "תזמן";
+"compose.error.invalid_date" = "תאריך לא חוקי.";
+"compose.alert.error" = "שגיאה";
+"compose.button.ok" = "אישור";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "המכתב נשלח!";
+"confirmation.message" = "המכתב שלך נשלח לעצמך העתידי וימסר בזמן המתוכנן.";
+"confirmation.button.continue" = "המשך";
+
+/* Letter Detail */
+"letter.title" = "מכתב";
+"letter.untitled" = "מכתב";
+"letter.button.close" = "סגור";
+"letter.button.delete" = "מחק";
+"letter.button.reschedule" = "תזמן מחדש";
+
+/* Photo Picker */
+"photo.choose" = "בחר תמונה";
+"photo.remove" = "הסר";
+
+/* Settings */
+"settings.title" = "הגדרות";
+"settings.section.basic" = "בסיסי";
+"settings.section.language" = "שפה";
+"settings.section.about" = "אודות האפליקציה";
+"settings.app_lock" = "נעילה בסיסמה (Face ID)";
+"settings.language" = "שפה";
+
+/* App Lock */
+"applock.reason" = "השתמש ב-Face ID או בסיסמה כדי לגשת למכתבים שלך";
+"applock.title" = "האפליקציה נעולה";
+"applock.message" = "השתמש ב-Face ID או בסיסמת המכשיר שלך כדי לפתוח את האפליקציה";
+"applock.unlock" = "פתח עם Face ID";
+"settings.version" = "גרסה";
+
+/* Notifications */
+"notification.title" = "מכתב לעצמך העתידי";
+"notification.body_default" = "המכתב העתידי שלך הגיע.";
+"notification.body_with_title" = "המכתב שלך '%@' הגיע!";
+"notification.subtitle" = "נמסר ב-%@";
+"notification.action.open" = "פתח";
+
+/* App Lock */
+"applock.reason" = "פתח כדי לצפות במכתבים שלך";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

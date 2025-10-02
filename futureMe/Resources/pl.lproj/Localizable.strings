@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Skrzynka odbiorcza";
+"tab.home" = "Strona główna";
+"tab.settings" = "Ustawienia";
+
+/* Home Screen */
+"home.title" = "List do przyszłego mnie";
+"home.send_letter" = "Wyślij list";
+
+/* Inbox */
+"inbox.title" = "Skrzynka odbiorcza";
+"inbox.empty.title" = "Jeszcze żadnych listów";
+"inbox.empty.description" = "Twoje przyszłe listy pojawią się tutaj, gdy nadejdzie czas ich dostarczenia.";
+"inbox.no_title" = "(Bez tytułu)";
+
+/* Compose Letter */
+"compose.title" = "Napisz list";
+"compose.section.title" = "Tytuł";
+"compose.section.message" = "Wiadomość";
+"compose.section.delivery_time" = "Czas dostarczenia";
+"compose.section.photos" = "Zdjęcia (opcjonalnie)";
+"compose.title_placeholder" = "Opcjonalny tytuł";
+"compose.deliver_at" = "Dostarcz o";
+"compose.photo1" = "Zdjęcie 1";
+"compose.photo2" = "Zdjęcie 2";
+"compose.button.cancel" = "Anuluj";
+"compose.button.schedule" = "Zaplanuj";
+"compose.error.invalid_date" = "Wybrano nieprawidłową datę.";
+"compose.alert.error" = "Błąd";
+"compose.button.ok" = "OK";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "List wysłany!";
+"confirmation.message" = "Twój list został wysłany do przyszłego ciebie i zostanie dostarczony o zaplanowanej godzinie.";
+"confirmation.button.continue" = "Kontynuuj";
+
+/* Letter Detail */
+"letter.title" = "List";
+"letter.untitled" = "List";
+"letter.button.close" = "Zamknij";
+"letter.button.delete" = "Usuń";
+"letter.button.reschedule" = "Zmień harmonogram";
+
+/* Photo Picker */
+"photo.choose" = "Wybierz zdjęcie";
+"photo.remove" = "Usuń";
+
+/* Settings */
+"settings.title" = "Ustawienia";
+"settings.section.basic" = "Podstawowe";
+"settings.section.language" = "Język";
+"settings.section.about" = "O aplikacji";
+"settings.app_lock" = "Blokada hasłem (Face ID)";
+"settings.language" = "Język";
+
+/* App Lock */
+"applock.reason" = "Użyj Face ID lub kodu dostępu, aby uzyskać dostęp do swoich listów";
+"applock.title" = "Aplikacja zablokowana";
+"applock.message" = "Użyj Face ID lub kodu dostępu urządzenia, aby odblokować aplikację";
+"applock.unlock" = "Odblokuj za pomocą Face ID";
+"settings.version" = "Wersja";
+
+/* Notifications */
+"notification.title" = "List do przyszłego ciebie";
+"notification.body_default" = "Twój przyszły list przybył.";
+"notification.body_with_title" = "Twój list '%@' przybył!";
+"notification.subtitle" = "Dostarczono %@";
+"notification.action.open" = "Otwórz";
+
+/* App Lock */
+"applock.reason" = "Odblokuj, aby zobaczyć swoje listy";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

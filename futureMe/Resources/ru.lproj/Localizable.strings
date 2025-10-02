@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Входящие";
+"tab.home" = "Главная";
+"tab.settings" = "Настройки";
+
+/* Home Screen */
+"home.title" = "Письмо будущему себе";
+"home.send_letter" = "Отправить письмо";
+
+/* Inbox */
+"inbox.title" = "Входящие";
+"inbox.empty.title" = "Пока нет писем";
+"inbox.empty.description" = "Ваши будущие письма появятся здесь, когда придёт время доставки.";
+"inbox.no_title" = "(Без названия)";
+
+/* Compose Letter */
+"compose.title" = "Написать письмо";
+"compose.section.title" = "Название";
+"compose.section.message" = "Сообщение";
+"compose.section.delivery_time" = "Время доставки";
+"compose.section.photos" = "Фотографии (необязательно)";
+"compose.title_placeholder" = "Необязательное название";
+"compose.deliver_at" = "Доставить";
+"compose.photo1" = "Фото 1";
+"compose.photo2" = "Фото 2";
+"compose.button.cancel" = "Отменить";
+"compose.button.schedule" = "Запланировать";
+"compose.error.invalid_date" = "Выбрана неверная дата.";
+"compose.alert.error" = "Ошибка";
+"compose.button.ok" = "ОК";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "Письмо отправлено!";
+"confirmation.message" = "Ваше письмо было отправлено вашему будущему себе и будет доставлено в запланированное время.";
+"confirmation.button.continue" = "Продолжить";
+
+/* Letter Detail */
+"letter.title" = "Письмо";
+"letter.untitled" = "Письмо";
+"letter.button.close" = "Закрыть";
+"letter.button.delete" = "Удалить";
+"letter.button.reschedule" = "Перенести";
+
+/* Photo Picker */
+"photo.choose" = "Выбрать фото";
+"photo.remove" = "Удалить";
+
+/* Settings */
+"settings.title" = "Настройки";
+"settings.section.basic" = "Основные";
+"settings.section.language" = "Язык";
+"settings.section.about" = "О приложении";
+"settings.app_lock" = "Блокировка паролем (Face ID)";
+"settings.language" = "Язык";
+
+/* App Lock */
+"applock.reason" = "Используйте Face ID или пароль для доступа к письмам";
+"applock.title" = "Приложение заблокировано";
+"applock.message" = "Используйте Face ID или пароль устройства для разблокировки приложения";
+"applock.unlock" = "Разблокировать с помощью Face ID";
+"settings.version" = "Версия";
+
+/* Notifications */
+"notification.title" = "Письмо будущему вам";
+"notification.body_default" = "Ваше будущее письмо прибыло.";
+"notification.body_with_title" = "Ваше письмо '%@' прибыло!";
+"notification.subtitle" = "Доставлено %@";
+"notification.action.open" = "Открыть";
+
+/* App Lock */
+"applock.reason" = "Разблокируйте, чтобы увидеть ваши письма";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

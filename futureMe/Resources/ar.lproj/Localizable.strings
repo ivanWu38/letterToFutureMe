@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "صندوق الوارد";
+"tab.home" = "الرئيسية";
+"tab.settings" = "الإعدادات";
+
+/* Home Screen */
+"home.title" = "رسالة إلى مستقبلي";
+"home.send_letter" = "إرسال رسالة";
+
+/* Inbox */
+"inbox.title" = "صندوق الوارد";
+"inbox.empty.title" = "لا توجد رسائل بعد";
+"inbox.empty.description" = "ستظهر رسائلك المستقبلية هنا عند وصول موعد تسليمها.";
+"inbox.no_title" = "(بدون عنوان)";
+
+/* Compose Letter */
+"compose.title" = "كتابة رسالة";
+"compose.section.title" = "العنوان";
+"compose.section.message" = "الرسالة";
+"compose.section.delivery_time" = "وقت التسليم";
+"compose.section.photos" = "صور (اختياري)";
+"compose.title_placeholder" = "عنوان اختياري";
+"compose.deliver_at" = "التسليم في";
+"compose.photo1" = "صورة 1";
+"compose.photo2" = "صورة 2";
+"compose.button.cancel" = "إلغاء";
+"compose.button.schedule" = "جدولة";
+"compose.error.invalid_date" = "تاريخ غير صالح.";
+"compose.alert.error" = "خطأ";
+"compose.button.ok" = "موافق";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "تم إرسال الرسالة!";
+"confirmation.message" = "تم إرسال رسالتك إلى نفسك المستقبلية وسيتم تسليمها في الوقت المحدد.";
+"confirmation.button.continue" = "متابعة";
+
+/* Letter Detail */
+"letter.title" = "رسالة";
+"letter.untitled" = "رسالة";
+"letter.button.close" = "إغلاق";
+"letter.button.delete" = "حذف";
+"letter.button.reschedule" = "إعادة الجدولة";
+
+/* Photo Picker */
+"photo.choose" = "اختيار صورة";
+"photo.remove" = "إزالة";
+
+/* Settings */
+"settings.title" = "الإعدادات";
+"settings.section.basic" = "أساسي";
+"settings.section.language" = "اللغة";
+"settings.section.about" = "حول التطبيق";
+"settings.app_lock" = "قفل بكلمة مرور (Face ID)";
+"settings.language" = "اللغة";
+
+/* App Lock */
+"applock.reason" = "استخدم Face ID أو رمز المرور للوصول إلى رسائلك";
+"applock.title" = "التطبيق مقفل";
+"applock.message" = "استخدم Face ID أو رمز المرور لفتح التطبيق";
+"applock.unlock" = "فتح باستخدام Face ID";
+"settings.version" = "الإصدار";
+
+/* Notifications */
+"notification.title" = "رسالة إلى مستقبلك";
+"notification.body_default" = "وصلت رسالتك المستقبلية.";
+"notification.body_with_title" = "وصلت رسالتك '%@'!";
+"notification.subtitle" = "تم التسليم في %@";
+"notification.action.open" = "فتح";
+
+/* App Lock */
+"applock.reason" = "فتح لعرض رسائلك";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

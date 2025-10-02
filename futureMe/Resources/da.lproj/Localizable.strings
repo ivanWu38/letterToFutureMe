@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Indbakke";
+"tab.home" = "Hjem";
+"tab.settings" = "Indstillinger";
+
+/* Home Screen */
+"home.title" = "Brev til fremtidige mig";
+"home.send_letter" = "Send et brev";
+
+/* Inbox */
+"inbox.title" = "Indbakke";
+"inbox.empty.title" = "Ingen breve endnu";
+"inbox.empty.description" = "Dine fremtidige breve vil vises her, når deres leveringstid kommer.";
+"inbox.no_title" = "(Ingen titel)";
+
+/* Compose Letter */
+"compose.title" = "Skriv et brev";
+"compose.section.title" = "Titel";
+"compose.section.message" = "Besked";
+"compose.section.delivery_time" = "Leveringstid";
+"compose.section.photos" = "Billeder (valgfrit)";
+"compose.title_placeholder" = "Valgfri titel";
+"compose.deliver_at" = "Lever kl.";
+"compose.photo1" = "Billede 1";
+"compose.photo2" = "Billede 2";
+"compose.button.cancel" = "Annuller";
+"compose.button.schedule" = "Planlæg";
+"compose.error.invalid_date" = "Ugyldig dato valgt.";
+"compose.alert.error" = "Fejl";
+"compose.button.ok" = "OK";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "Brev sendt!";
+"confirmation.message" = "Dit brev er sendt til dit fremtidige jeg og vil blive leveret på det planlagte tidspunkt.";
+"confirmation.button.continue" = "Fortsæt";
+
+/* Letter Detail */
+"letter.title" = "Brev";
+"letter.untitled" = "Brev";
+"letter.button.close" = "Luk";
+"letter.button.delete" = "Slet";
+"letter.button.reschedule" = "Omplanlæg";
+
+/* Photo Picker */
+"photo.choose" = "Vælg billede";
+"photo.remove" = "Fjern";
+
+/* Settings */
+"settings.title" = "Indstillinger";
+"settings.section.basic" = "Grundlæggende";
+"settings.section.language" = "Sprog";
+"settings.section.about" = "Om appen";
+"settings.app_lock" = "Adgangskode lås (Face ID)";
+"settings.language" = "Sprog";
+
+/* App Lock */
+"applock.reason" = "Brug Face ID eller adgangskode for at få adgang til dine breve";
+"applock.title" = "App låst";
+"applock.message" = "Brug Face ID eller din enheds adgangskode for at låse appen op";
+"applock.unlock" = "Lås op med Face ID";
+"settings.version" = "Version";
+
+/* Notifications */
+"notification.title" = "Brev til fremtidige dig";
+"notification.body_default" = "Dit fremtidige brev er ankommet.";
+"notification.body_with_title" = "Dit brev '%@' er ankommet!";
+"notification.subtitle" = "Leveret den %@";
+"notification.action.open" = "Åbn";
+
+/* App Lock */
+"applock.reason" = "Lås op for at se dine breve";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";

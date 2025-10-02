@@ -6,6 +6,36 @@ enum Language: String, CaseIterable {
     case traditionalChinese = "zh-Hant"
     case simplifiedChinese = "zh-Hans"
     case japanese = "ja"
+    case arabic = "ar"
+    case catalan = "ca"
+    case czech = "cs"
+    case danish = "da"
+    case german = "de"
+    case greek = "el"
+    case spanish = "es"
+    case finnish = "fi"
+    case french = "fr"
+    case hebrew = "he"
+    case hindi = "hi"
+    case croatian = "hr"
+    case hungarian = "hu"
+    case indonesian = "id"
+    case italian = "it"
+    case korean = "ko"
+    case malay = "ms"
+    case norwegian = "nb"
+    case dutch = "nl"
+    case polish = "pl"
+    case portugueseBrazil = "pt-BR"
+    case portuguesePortugal = "pt-PT"
+    case romanian = "ro"
+    case russian = "ru"
+    case slovak = "sk"
+    case swedish = "sv"
+    case thai = "th"
+    case turkish = "tr"
+    case ukrainian = "uk"
+    case vietnamese = "vi"
 
     var displayName: String {
         switch self {
@@ -17,6 +47,66 @@ enum Language: String, CaseIterable {
             return "简体中文"
         case .japanese:
             return "日本語"
+        case .arabic:
+            return "العربية"
+        case .catalan:
+            return "Català"
+        case .czech:
+            return "Čeština"
+        case .danish:
+            return "Dansk"
+        case .german:
+            return "Deutsch"
+        case .greek:
+            return "Ελληνικά"
+        case .spanish:
+            return "Español"
+        case .finnish:
+            return "Suomi"
+        case .french:
+            return "Français"
+        case .hebrew:
+            return "עברית"
+        case .hindi:
+            return "हिन्दी"
+        case .croatian:
+            return "Hrvatski"
+        case .hungarian:
+            return "Magyar"
+        case .indonesian:
+            return "Bahasa Indonesia"
+        case .italian:
+            return "Italiano"
+        case .korean:
+            return "한국어"
+        case .malay:
+            return "Bahasa Melayu"
+        case .norwegian:
+            return "Norsk Bokmål"
+        case .dutch:
+            return "Nederlands"
+        case .polish:
+            return "Polski"
+        case .portugueseBrazil:
+            return "Português (Brasil)"
+        case .portuguesePortugal:
+            return "Português (Portugal)"
+        case .romanian:
+            return "Română"
+        case .russian:
+            return "Русский"
+        case .slovak:
+            return "Slovenčina"
+        case .swedish:
+            return "Svenska"
+        case .thai:
+            return "ไทย"
+        case .turkish:
+            return "Türkçe"
+        case .ukrainian:
+            return "Українська"
+        case .vietnamese:
+            return "Tiếng Việt"
         }
     }
 
@@ -30,6 +120,66 @@ enum Language: String, CaseIterable {
             return "简体中文"
         case .japanese:
             return "日本語"
+        case .arabic:
+            return "العربية"
+        case .catalan:
+            return "Català"
+        case .czech:
+            return "Čeština"
+        case .danish:
+            return "Dansk"
+        case .german:
+            return "Deutsch"
+        case .greek:
+            return "Ελληνικά"
+        case .spanish:
+            return "Español"
+        case .finnish:
+            return "Suomi"
+        case .french:
+            return "Français"
+        case .hebrew:
+            return "עברית"
+        case .hindi:
+            return "हिन्दी"
+        case .croatian:
+            return "Hrvatski"
+        case .hungarian:
+            return "Magyar"
+        case .indonesian:
+            return "Bahasa Indonesia"
+        case .italian:
+            return "Italiano"
+        case .korean:
+            return "한국어"
+        case .malay:
+            return "Bahasa Melayu"
+        case .norwegian:
+            return "Norsk Bokmål"
+        case .dutch:
+            return "Nederlands"
+        case .polish:
+            return "Polski"
+        case .portugueseBrazil:
+            return "Português (Brasil)"
+        case .portuguesePortugal:
+            return "Português (Portugal)"
+        case .romanian:
+            return "Română"
+        case .russian:
+            return "Русский"
+        case .slovak:
+            return "Slovenčina"
+        case .swedish:
+            return "Svenska"
+        case .thai:
+            return "ไทย"
+        case .turkish:
+            return "Türkçe"
+        case .ukrainian:
+            return "Українська"
+        case .vietnamese:
+            return "Tiếng Việt"
         }
     }
 }

@@ -1,0 +1,77 @@
+/* Tab Bar */
+"tab.inbox" = "Safata d'entrada";
+"tab.home" = "Inici";
+"tab.settings" = "Configuració";
+
+/* Home Screen */
+"home.title" = "Carta al meu futur";
+"home.send_letter" = "Enviar una carta";
+
+/* Inbox */
+"inbox.title" = "Safata d'entrada";
+"inbox.empty.title" = "Encara no hi ha cartes";
+"inbox.empty.description" = "Les teves cartes futures apareixeran aquí quan arribi l'hora del seu lliurament.";
+"inbox.no_title" = "(Sense títol)";
+
+/* Compose Letter */
+"compose.title" = "Escriure una carta";
+"compose.section.title" = "Títol";
+"compose.section.message" = "Missatge";
+"compose.section.delivery_time" = "Hora de lliurament";
+"compose.section.photos" = "Fotos (opcional)";
+"compose.title_placeholder" = "Títol opcional";
+"compose.deliver_at" = "Lliurar a";
+"compose.photo1" = "Foto 1";
+"compose.photo2" = "Foto 2";
+"compose.button.cancel" = "Cancel·lar";
+"compose.button.schedule" = "Programar";
+"compose.error.invalid_date" = "Data no vàlida.";
+"compose.alert.error" = "Error";
+"compose.button.ok" = "D'acord";
+
+/* Letter Sent Confirmation */
+"confirmation.title" = "Carta enviada!";
+"confirmation.message" = "La teva carta s'ha enviat al teu jo futur i es lliurarà a l'hora programada.";
+"confirmation.button.continue" = "Continuar";
+
+/* Letter Detail */
+"letter.title" = "Carta";
+"letter.untitled" = "Carta";
+"letter.button.close" = "Tancar";
+"letter.button.delete" = "Eliminar";
+"letter.button.reschedule" = "Reprogramar";
+
+/* Photo Picker */
+"photo.choose" = "Triar foto";
+"photo.remove" = "Eliminar";
+
+/* Settings */
+"settings.title" = "Configuració";
+"settings.section.basic" = "Bàsic";
+"settings.section.language" = "Idioma";
+"settings.section.about" = "Sobre l'app";
+"settings.app_lock" = "Bloqueig amb contrasenya (Face ID)";
+"settings.language" = "Idioma";
+
+/* App Lock */
+"applock.reason" = "Utilitza Face ID o el codi per accedir a les teves cartes";
+"applock.title" = "App bloquejada";
+"applock.message" = "Utilitza Face ID o el codi del dispositiu per desbloquejar l'app";
+"applock.unlock" = "Desbloquejar amb Face ID";
+"settings.version" = "Versió";
+
+/* Notifications */
+"notification.title" = "Carta al teu jo futur";
+"notification.body_default" = "La teva carta futura ha arribat.";
+"notification.body_with_title" = "La teva carta '%@' ha arribat!";
+"notification.subtitle" = "Lliurada el %@";
+"notification.action.open" = "Obrir";
+
+/* App Lock */
+"applock.reason" = "Desbloqueja per veure les teves cartes";
+
+/* Language Names */
+"language.english" = "English";
+"language.traditional_chinese" = "繁體中文";
+"language.simplified_chinese" = "简体中文";
+"language.japanese" = "日本語";
